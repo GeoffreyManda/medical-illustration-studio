@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0.0",
+  "id": "study-workflow",
+  "title": "From a specimen to an interpretable image",
+  "subtitle": "A descriptive workflow, without fabricated experimental results",
+  "description": "A conceptual research workflow progresses from a labelled sample vial to a prepared microscope slide, then to optical microscopy. The arrows indicate the order of activities, not a biological mechanism. No sample results, operating instructions, measurements or patient identifiers are shown.",
+  "audience": "scientific",
+  "representation": "schematic",
+  "frame": {
+    "species": "human, conceptual unless specified",
+    "life_stage": "not specified",
+    "view": "schematic projection",
+    "laterality": "not-applicable",
+    "scale_policy": "not-to-scale",
+    "projection": "orthographic schematic"
+  },
+  "canvas": {
+    "width": 1200,
+    "height": 800,
+    "print_width_mm": 180,
+    "background": "#FFFFFF",
+    "text_colour": "#354753",
+    "minimum_label_pt": 7
+  },
+  "layout": "study-workflow",
+  "sources": [
+    {
+      "id": "house-design",
+      "title": "Medical Illustration Studio original design rules",
+      "url": "urn:medical-illustration-studio:house-design:1",
+      "kind": "illustrative"
+    }
+  ],
+  "claims": [],
+  "compartments": [],
+  "nodes": [
+    {
+      "id": "sample",
+      "asset": "sample-vial",
+      "box": [
+        145,
+        266,
+        180,
+        213
+      ]
+    },
+    {
+      "id": "slide",
+      "asset": "microscope-slide",
+      "box": [
+        488,
+        287,
+        225,
+        173
+      ]
+    },
+    {
+      "id": "scope",
+      "asset": "microscope",
+      "box": [
+        876,
+        246,
+        196,
+        241
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "prepare",
+      "source": {
+        "node": "sample",
+        "landmark": "right"
+      },
+      "target": {
+        "node": "slide",
+        "landmark": "left"
+      },
+      "type": "sequence",
+      "via": [
+        [
+          409,
+          373
+        ]
+      ],
+      "label": "prepare",
+      "label_position": [
+        349,
+        313
+      ]
+    },
+    {
+      "id": "observe",
+      "source": {
+        "node": "slide",
+        "landmark": "right"
+      },
+      "target": {
+        "node": "scope",
+        "landmark": "left"
+      },
+      "type": "sequence",
+      "via": [
+        [
+          791,
+          373
+        ]
+      ],
+      "label": "observe",
+      "label_position": [
+        744,
+        313
+      ]
+    }
+  ],
+  "labels": [
+    {
+      "id": "sample-label",
+      "text": "1  Specimen",
+      "box": [
+        128,
+        183,
+        251,
+        42
+      ],
+      "font_size": 24,
+      "role": "heading"
+    },
+    {
+      "id": "slide-label",
+      "text": "2  Prepared slide",
+      "box": [
+        470,
+        183,
+        315,
+        42
+      ],
+      "font_size": 24,
+      "role": "heading"
+    },
+    {
+      "id": "scope-label",
+      "text": "3  Microscopy",
+      "box": [
+        866,
+        183,
+        272,
+        42
+      ],
+      "font_size": 24,
+      "role": "heading"
+    },
+    {
+      "id": "sample-note",
+      "text": "A defined material and an explicit identity",
+      "box": [
+        114,
+        545,
+        268,
+        70
+      ],
+      "font_size": 18
+    },
+    {
+      "id": "slide-note",
+      "text": "Preparation is described in the study methods",
+      "box": [
+        477,
+        545,
+        281,
+        70
+      ],
+      "font_size": 18
+    },
+    {
+      "id": "scope-note",
+      "text": "Observed data remain separate from illustration",
+      "box": [
+        863,
+        545,
+        278,
+        70
+      ],
+      "font_size": 18
+    }
+  ],
+  "caption": "Conceptual workflow; not an operating protocol. Sequence arrows indicate stages of work, not causal biological effects. No microscopy result or sample measurement is fabricated."
+}

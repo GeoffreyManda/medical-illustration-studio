@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0.0",
+  "id": "atlas-arterial-wall",
+  "title": "Muscular artery",
+  "subtitle": "Oblique section through the vessel wall",
+  "description": "An oblique section through an idealised muscular artery distinguishes the outer supporting coat, muscular media, internal elastic lamina, intima and lumen. Sparse surface vessels are shown.",
+  "asset": "atlas-arterial-wall",
+  "width": 1000,
+  "height": 1190,
+  "print_width_mm": 190,
+  "label_size": 17,
+  "label_bank_width": 174,
+  "art_box": [
+    164,
+    175,
+    687,
+    782
+  ],
+  "anatomy": {
+    "species": "Homo sapiens",
+    "life_stage": "adult, idealised",
+    "view": "oblique illustrative section",
+    "laterality": "not-applicable"
+  },
+  "labels": [
+    {
+      "landmark": "vasa-vasorum",
+      "text": "Vasa vasorum",
+      "side": "left"
+    },
+    {
+      "landmark": "outer-coat",
+      "text": "Outer connective tissue",
+      "side": "left"
+    },
+    {
+      "landmark": "adventitia",
+      "text": "Tunica adventitia",
+      "side": "left"
+    },
+    {
+      "landmark": "lumen",
+      "text": "Lumen",
+      "side": "right"
+    },
+    {
+      "landmark": "media",
+      "text": "Tunica media",
+      "side": "right"
+    },
+    {
+      "landmark": "elastic-lamina",
+      "text": "Internal elastic lamina",
+      "side": "right"
+    },
+    {
+      "landmark": "intima",
+      "text": "Tunica intima",
+      "side": "right"
+    }
+  ],
+  "caption": "Illustrative muscular artery. Wall thickness and layer proportions are exaggerated for visibility; not a quantitative histological section.",
+  "reference_line": "Anatomical reference: OpenStax, Anatomy and Physiology 2e, section 20.1.",
+  "intended_use": "educational-draft"
+}

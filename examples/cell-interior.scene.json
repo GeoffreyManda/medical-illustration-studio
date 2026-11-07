@@ -1,0 +1,279 @@
+{
+  "schema_version": "1.0.0",
+  "id": "cell-interior",
+  "title": "Selective detail inside a cell",
+  "subtitle": "Compartment relationships are preserved; relative sizes are explanatory",
+  "description": "A generic nucleated cell is shown with a nucleus, mitochondria, rough endoplasmic reticulum, Golgi apparatus and a lysosome. Organelles are contained within the cell outline. Their numbers and relative dimensions are chosen for explanation rather than representing a measured cell.",
+  "audience": "scientific",
+  "representation": "schematic",
+  "frame": {
+    "species": "human, conceptual unless specified",
+    "life_stage": "not specified",
+    "view": "schematic projection",
+    "laterality": "not-applicable",
+    "scale_policy": "not-to-scale",
+    "projection": "orthographic schematic"
+  },
+  "canvas": {
+    "width": 1200,
+    "height": 800,
+    "print_width_mm": 180,
+    "background": "#FFFFFF",
+    "text_colour": "#354753",
+    "minimum_label_pt": 7
+  },
+  "layout": "cell-interior",
+  "sources": [
+    {
+      "id": "openstax-organelles",
+      "title": "OpenStax A&P 2e, 3.2 Cytoplasm and Organelles",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-2-the-cytoplasm-and-cellular-organelles",
+      "kind": "reference"
+    }
+  ],
+  "claims": [
+    {
+      "id": "structure",
+      "text": "A generic nucleated cell is shown with a nucleus, mitochondria, rough endoplasmic reticulum, Golgi apparatus and a lysosome. Organelles are contained within the cell outline. Their numbers and relative dimensions are chosen for explanation rather than representing a measured cell.",
+      "status": "illustrative",
+      "sources": [
+        "openstax-organelles"
+      ]
+    }
+  ],
+  "compartments": [],
+  "nodes": [
+    {
+      "id": "cell",
+      "asset": "cell-outline",
+      "box": [
+        180,
+        123,
+        763,
+        568
+      ]
+    },
+    {
+      "id": "nucleus",
+      "asset": "nucleus",
+      "box": [
+        362,
+        316,
+        160,
+        183
+      ]
+    },
+    {
+      "id": "mito1",
+      "asset": "mitochondrion",
+      "box": [
+        628,
+        474,
+        153,
+        111
+      ]
+    },
+    {
+      "id": "mito2",
+      "asset": "mitochondrion",
+      "box": [
+        618,
+        241,
+        130,
+        109
+      ],
+      "rotation": 90
+    },
+    {
+      "id": "er",
+      "asset": "rough-er",
+      "box": [
+        545,
+        323,
+        187,
+        154
+      ]
+    },
+    {
+      "id": "golgi",
+      "asset": "golgi",
+      "box": [
+        405,
+        503,
+        132,
+        114
+      ]
+    },
+    {
+      "id": "lysosome",
+      "asset": "lysosome",
+      "box": [
+        724,
+        372,
+        80,
+        84
+      ]
+    },
+    {
+      "id": "vesicle",
+      "asset": "vesicle",
+      "box": [
+        706,
+        444,
+        43,
+        43
+      ]
+    }
+  ],
+  "edges": [],
+  "labels": [
+    {
+      "id": "membrane",
+      "text": "Plasma membrane",
+      "box": [
+        892,
+        493,
+        279,
+        34
+      ],
+      "leader_via": [
+        [
+          854,
+          504
+        ]
+      ],
+      "target": {
+        "node": "cell",
+        "landmark": "membrane"
+      }
+    },
+    {
+      "id": "nucleus-label",
+      "text": "Nucleus",
+      "box": [
+        70,
+        306,
+        175,
+        30
+      ],
+      "target": {
+        "node": "nucleus",
+        "landmark": "envelope-left"
+      }
+    },
+    {
+      "id": "mitochondrion",
+      "text": "Mitochondrion",
+      "box": [
+        857,
+        585,
+        256,
+        34
+      ],
+      "target": {
+        "node": "mito1",
+        "landmark": "outer-membrane"
+      }
+    },
+    {
+      "id": "er-label",
+      "text": "Rough endoplasmic reticulum",
+      "box": [
+        913,
+        305,
+        235,
+        56
+      ],
+      "leader_via": [
+        [
+          881,
+          366
+        ]
+      ],
+      "target": {
+        "node": "er",
+        "landmark": "cisterna"
+      }
+    },
+    {
+      "id": "golgi-label",
+      "text": "Golgi apparatus",
+      "box": [
+        80,
+        580,
+        205,
+        32
+      ],
+      "target": {
+        "node": "golgi",
+        "landmark": "centre"
+      }
+    },
+    {
+      "id": "lysosome-label",
+      "text": "Lysosome",
+      "box": [
+        921,
+        415,
+        190,
+        32
+      ],
+      "target": {
+        "node": "lysosome",
+        "landmark": "centre"
+      }
+    }
+  ],
+  "caption": "Schematic; not to scale. A generic cell, not a complete cell-type reconstruction. Organelle counts and positions are illustrative. Each selected structure remains individually editable.",
+  "relations": [
+    {
+      "id": "part-nucleus",
+      "subject": "nucleus",
+      "predicate": "part_of",
+      "object": "cell",
+      "claim": "structure"
+    },
+    {
+      "id": "part-mito1",
+      "subject": "mito1",
+      "predicate": "part_of",
+      "object": "cell",
+      "claim": "structure"
+    },
+    {
+      "id": "part-mito2",
+      "subject": "mito2",
+      "predicate": "part_of",
+      "object": "cell",
+      "claim": "structure"
+    },
+    {
+      "id": "part-er",
+      "subject": "er",
+      "predicate": "part_of",
+      "object": "cell",
+      "claim": "structure"
+    },
+    {
+      "id": "part-golgi",
+      "subject": "golgi",
+      "predicate": "part_of",
+      "object": "cell",
+      "claim": "structure"
+    },
+    {
+      "id": "part-lysosome",
+      "subject": "lysosome",
+      "predicate": "part_of",
+      "object": "cell",
+      "claim": "structure"
+    },
+    {
+      "id": "part-vesicle",
+      "subject": "vesicle",
+      "predicate": "part_of",
+      "object": "cell",
+      "claim": "structure"
+    }
+  ]
+}

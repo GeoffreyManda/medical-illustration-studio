@@ -1,0 +1,335 @@
+{
+  "schema_version": "1.0.0",
+  "id": "cell-signalling",
+  "title": "A signal is not a transported molecule",
+  "subtitle": "House notation separates association, activation and inhibition",
+  "description": "An intentionally hypothetical signalling example. A ligand associates with an extracellular receptor domain. The receptor is shown at a membrane boundary. A proposed intracellular activation leads to a generic effector, while a second proposed relation inhibits the effector. Dashed relationships are illustrative, not an asserted named pathway.",
+  "audience": "scientific",
+  "representation": "schematic",
+  "frame": {
+    "species": "human, conceptual unless specified",
+    "life_stage": "not specified",
+    "view": "schematic projection",
+    "laterality": "not-applicable",
+    "scale_policy": "not-to-scale",
+    "projection": "orthographic schematic"
+  },
+  "canvas": {
+    "width": 1200,
+    "height": 800,
+    "print_width_mm": 180,
+    "background": "#FFFFFF",
+    "text_colour": "#354753",
+    "minimum_label_pt": 7
+  },
+  "layout": "membrane-signalling",
+  "sources": [
+    {
+      "id": "openstax-signalling",
+      "title": "OpenStax Biology 2e, Signalling Molecules and Receptors",
+      "url": "https://openstax.org/books/biology-2e/pages/9-1-signaling-molecules-and-cellular-receptors",
+      "kind": "reference"
+    }
+  ],
+  "claims": [
+    {
+      "id": "association",
+      "text": "A ligand associates with the receptor in this explanatory example.",
+      "status": "illustrative",
+      "sources": []
+    },
+    {
+      "id": "activation",
+      "text": "A receptor-associated signal activates an effector in this invented example.",
+      "status": "illustrative",
+      "sources": []
+    },
+    {
+      "id": "inhibition",
+      "text": "A regulator inhibits the effector in this invented example.",
+      "status": "illustrative",
+      "sources": []
+    }
+  ],
+  "compartments": [
+    {
+      "id": "extracellular",
+      "label": "EXTRACELLULAR",
+      "box": [
+        50,
+        143,
+        1100,
+        196
+      ],
+      "fill": "#F8F7F2",
+      "boundary": "none",
+      "kind": "extracellular"
+    },
+    {
+      "id": "intracellular",
+      "label": "INTRACELLULAR",
+      "box": [
+        50,
+        365,
+        1100,
+        320
+      ],
+      "fill": "#F0F5F4",
+      "boundary": "none",
+      "kind": "intracellular"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bilayer0",
+      "asset": "lipid-bilayer",
+      "box": [
+        50,
+        310,
+        204,
+        80
+      ]
+    },
+    {
+      "id": "bilayer1",
+      "asset": "lipid-bilayer",
+      "box": [
+        233,
+        310,
+        204,
+        80
+      ]
+    },
+    {
+      "id": "bilayer2",
+      "asset": "lipid-bilayer",
+      "box": [
+        416,
+        310,
+        204,
+        80
+      ]
+    },
+    {
+      "id": "bilayer3",
+      "asset": "lipid-bilayer",
+      "box": [
+        599,
+        310,
+        204,
+        80
+      ]
+    },
+    {
+      "id": "bilayer4",
+      "asset": "lipid-bilayer",
+      "box": [
+        782,
+        310,
+        204,
+        80
+      ]
+    },
+    {
+      "id": "bilayer5",
+      "asset": "lipid-bilayer",
+      "box": [
+        965,
+        310,
+        204,
+        80
+      ]
+    },
+    {
+      "id": "ligand",
+      "asset": "ligand",
+      "box": [
+        381,
+        163,
+        91,
+        98
+      ]
+    },
+    {
+      "id": "receptor",
+      "asset": "receptor-single",
+      "box": [
+        433,
+        267,
+        140,
+        193
+      ],
+      "compartment": "intracellular",
+      "placement": "boundary"
+    },
+    {
+      "id": "effector",
+      "asset": "kinase",
+      "box": [
+        742,
+        489,
+        151,
+        151
+      ],
+      "compartment": "intracellular"
+    },
+    {
+      "id": "regulator",
+      "asset": "phosphatase",
+      "box": [
+        992,
+        478,
+        112,
+        132
+      ],
+      "compartment": "intracellular"
+    }
+  ],
+  "edges": [
+    {
+      "id": "bind",
+      "source": {
+        "node": "ligand",
+        "landmark": "bottom"
+      },
+      "target": {
+        "node": "receptor",
+        "landmark": "binding-site"
+      },
+      "type": "association",
+      "claim": "association",
+      "via": [
+        [
+          426,
+          252
+        ],
+        [
+          504,
+          252
+        ]
+      ]
+    },
+    {
+      "id": "activate",
+      "source": {
+        "node": "receptor",
+        "landmark": "intracellular-domain"
+      },
+      "target": {
+        "node": "effector",
+        "landmark": "left"
+      },
+      "type": "activation",
+      "claim": "activation",
+      "via": [
+        [
+          503,
+          574
+        ],
+        [
+          704,
+          574
+        ]
+      ],
+      "label": "activates",
+      "label_position": [
+        553,
+        540
+      ]
+    },
+    {
+      "id": "inhibit",
+      "source": {
+        "node": "regulator",
+        "landmark": "left"
+      },
+      "target": {
+        "node": "effector",
+        "landmark": "right"
+      },
+      "type": "inhibition",
+      "claim": "inhibition",
+      "via": [
+        [
+          950,
+          554
+        ],
+        [
+          950,
+          562
+        ]
+      ]
+    }
+  ],
+  "labels": [
+    {
+      "id": "ligand",
+      "text": "Ligand",
+      "box": [
+        179,
+        206,
+        145,
+        32
+      ],
+      "target": {
+        "node": "ligand",
+        "landmark": "left"
+      }
+    },
+    {
+      "id": "receptor",
+      "text": "Receptor",
+      "box": [
+        213,
+        449,
+        162,
+        32
+      ],
+      "leader_via": [
+        [
+          408,
+          463
+        ]
+      ],
+      "target": {
+        "node": "receptor",
+        "landmark": "intracellular-domain"
+      }
+    },
+    {
+      "id": "effector",
+      "text": "Effector",
+      "box": [
+        756,
+        645,
+        145,
+        32
+      ]
+    },
+    {
+      "id": "inhibitor",
+      "text": "Regulator",
+      "box": [
+        979,
+        633,
+        145,
+        32
+      ]
+    },
+    {
+      "id": "membrane",
+      "text": "Lipid bilayer",
+      "box": [
+        692,
+        282,
+        190,
+        32
+      ],
+      "target": {
+        "node": "bilayer4",
+        "landmark": "outer-leaflet"
+      }
+    }
+  ],
+  "caption": "Illustrative mechanism only; not a named pathway or evidence of molecular binding. Dashed lines denote hypothetical relationships. Open arrow: activation. T-bar: inhibition. Plain line: association."
+}

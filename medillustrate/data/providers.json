@@ -1,0 +1,87 @@
+{
+  "providers": [
+    {
+      "id": "servier",
+      "role": "Professional 2D anatomy, cells, physiology",
+      "rights": "CC BY 4.0",
+      "route": "manual-download",
+      "limitations": "Retain attribution and adaptation notice; verify anatomy at intended use.",
+      "bundled": false,
+      "adapter_tested": false
+    },
+    {
+      "id": "nih-bioart",
+      "role": "Professional scientific illustration and brushes",
+      "rights": "Per item: public domain or attribution licence",
+      "route": "manual-download",
+      "limitations": "Record each file licence; do not assume every NIH asset is public domain.",
+      "bundled": false,
+      "adapter_tested": false
+    },
+    {
+      "id": "bioicons",
+      "role": "Community SVGs and existing editor integrations",
+      "rights": "Per item; mixed open licences",
+      "route": "local-svg-import",
+      "limitations": "Check source author, licence version and share-alike obligations.",
+      "bundled": false,
+      "adapter_tested": false
+    },
+    {
+      "id": "zanatomy",
+      "role": "Reference-based 3D anatomy",
+      "rights": "CC BY-SA 4.0 as stated in repository",
+      "route": "external-3d-workflow",
+      "limitations": "No Blender adapter or reviewed model bundle is included.",
+      "bundled": false,
+      "adapter_tested": false
+    },
+    {
+      "id": "scidraw",
+      "role": "Community scientific drawings",
+      "rights": "Item-level verification outstanding",
+      "route": "manual-review",
+      "limitations": "Do not ingest before licence confirmation.",
+      "bundled": false,
+      "adapter_tested": false
+    },
+    {
+      "id": "rcsb",
+      "role": "Measured or modelled molecular structures",
+      "rights": "CC0 coordinate archive; images differ",
+      "route": "external-molecular-workflow",
+      "limitations": "Verify structure identity, experimental method, assembly, missing residues and ligand state.",
+      "bundled": false,
+      "adapter_tested": false
+    },
+    {
+      "id": "netter-rights",
+      "role": "Anatomical craft and licensed plates",
+      "rights": "Proprietary; separate permission",
+      "route": "reference-only",
+      "limitations": "Never bundle, trace or extract a competing artwork library.",
+      "bundled": false,
+      "adapter_tested": false
+    },
+    {
+      "id": "biorender-rights",
+      "role": "Scientific diagram composition and licensed figures",
+      "rights": "Proprietary; licence-specific",
+      "route": "reference-only",
+      "limitations": "No standalone icon extraction or redistribution.",
+      "bundled": false,
+      "adapter_tested": false
+    },
+    {
+      "id": "openstax-epithelium",
+      "role": "Anatomical facts and teaching references",
+      "rights": "Verify current item/version; no blanket CC BY assumption",
+      "route": "reference-only",
+      "limitations": "No textbook image or text training corpus is bundled.",
+      "bundled": false,
+      "adapter_tested": false
+    }
+  ],
+  "bundled_assets": "77 original vector records: 75 schematic assets, one continuous epithelial assembly and one process glyph. No external provider files are bundled.",
+  "imports": "The generic local SVG importer is implemented; provider download APIs are not."
+}

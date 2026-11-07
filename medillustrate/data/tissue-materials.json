@@ -1,0 +1,126 @@
+{
+  "version": "2.0.0",
+  "status": "Illustrative art-direction parameters, not measured tissue optical properties.",
+  "materials": {
+    "renal-cortex": {
+      "colours": [
+        "#F4BBA4",
+        "#CC8872",
+        "#AC6858"
+      ],
+      "surface": "finely granular cut parenchyma",
+      "texture": "sparse bounded stipple; no discrete invented glomeruli at gross scale",
+      "specular": "low"
+    },
+    "renal-medulla": {
+      "colours": [
+        "#EAB29B",
+        "#BA7463",
+        "#87574F"
+      ],
+      "surface": "radially striated cut pyramids",
+      "texture": "rays converge toward a mapped papilla",
+      "specular": "low"
+    },
+    "renal-capsule": {
+      "colours": [
+        "#F2D2BE",
+        "#CE9C85",
+        "#916451"
+      ],
+      "surface": "thin tough membrane",
+      "texture": "quiet; narrow edge highlights",
+      "specular": "low-medium"
+    },
+    "renal-pelvis": {
+      "colours": [
+        "#FAE9C7",
+        "#E8C89D",
+        "#BA9A75"
+      ],
+      "surface": "opened urothelial collecting spaces",
+      "texture": "smooth walls, differentiated lumen",
+      "specular": "low-medium"
+    },
+    "artery": {
+      "colours": [
+        "#F1A28C",
+        "#CA6754",
+        "#8C4238"
+      ],
+      "surface": "thick-walled vessel",
+      "texture": "tube shading follows local cross-section",
+      "specular": "medium"
+    },
+    "vein": {
+      "colours": [
+        "#B4CCD5",
+        "#799DAD",
+        "#4B6676"
+      ],
+      "surface": "thin-walled compliant vessel",
+      "texture": "avoid identical arterial wall thickness",
+      "specular": "medium"
+    },
+    "nerve": {
+      "colours": [
+        "#F8E8B8",
+        "#D8C284",
+        "#AB9258"
+      ],
+      "surface": "fasciculated nerve",
+      "texture": "parallel wavy bundles; distinguish envelopes",
+      "specular": "low"
+    },
+    "fat": {
+      "colours": [
+        "#FAE6B6",
+        "#E5C285",
+        "#C39B64"
+      ],
+      "surface": "lobulated adipose tissue",
+      "texture": "irregular lobules rather than identical circles",
+      "specular": "low"
+    },
+    "smooth-muscle": {
+      "colours": [
+        "#EFBCB0",
+        "#CC8C80",
+        "#AA6F67"
+      ],
+      "surface": "muscular wall",
+      "texture": "circumferential local direction",
+      "specular": "low"
+    },
+    "connective-tissue": {
+      "colours": [
+        "#EEE1D1",
+        "#CBB9A1",
+        "#A5937A"
+      ],
+      "surface": "fibrous supporting tissue",
+      "texture": "interlacing, non-periodic fibres",
+      "specular": "low"
+    },
+    "elastic-lamina": {
+      "colours": [
+        "#E7D59C",
+        "#B69A5F",
+        "#8E794D"
+      ],
+      "surface": "wavy elastic boundary",
+      "texture": "thin continuous folded sheet",
+      "specular": "low"
+    },
+    "myelin": {
+      "colours": [
+        "#F7EBCB",
+        "#D9BF80",
+        "#B3975E"
+      ],
+      "surface": "myelinated fibre in section",
+      "texture": "ring around axon; never mistaken for vessel lumen",
+      "specular": "low"
+    }
+  }
+}

@@ -1,0 +1,426 @@
+{
+  "version": "1.0.0",
+  "status": "protocol-only-no-comparative-results",
+  "tasks": [
+    {
+      "id": "MED-01",
+      "task": "Single anatomical plate",
+      "brief": "What is present and where?",
+      "layout": "anatomical-plate",
+      "required_inputs": [
+        "Reviewed geometry",
+        "View and laterality",
+        "Required and omitted structures"
+      ],
+      "critical_failures": [
+        "Icon collage",
+        "Invented branching",
+        "Mirroring for convenience"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-02",
+      "task": "Polarised epithelial section",
+      "brief": "How are the luminal and basal sides organised?",
+      "layout": "epithelial-section",
+      "required_inputs": [
+        "Cell classes",
+        "Junction detail",
+        "Tissue context"
+      ],
+      "critical_failures": [
+        "Random nuclei outside cells",
+        "Confusing a section with a surface view"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-03",
+      "task": "Vessel-wall cross-section",
+      "brief": "Which layer is being explained?",
+      "layout": "vascular-cross-section",
+      "required_inputs": [
+        "Vessel class",
+        "Layer terminology",
+        "Cut plane"
+      ],
+      "critical_failures": [
+        "Red equals artery as a universal rule",
+        "Identical layer widths presented as measurements"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-04",
+      "task": "Unfolded tubular system",
+      "brief": "Which compartments are connected?",
+      "layout": "unfolded-tubule",
+      "required_inputs": [
+        "Segment list",
+        "Connectivity",
+        "Regional boundary"
+      ],
+      "critical_failures": [
+        "Crossing lines interpreted as anastomoses",
+        "Claiming collecting duct is part of nephron"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-05",
+      "task": "Membrane-centred signalling",
+      "brief": "How does a signal cross a compartment boundary?",
+      "layout": "membrane-signalling",
+      "required_inputs": [
+        "Evidence for each claim",
+        "Receptor class",
+        "Mechanism scope"
+      ],
+      "critical_failures": [
+        "All arrows meaning the same thing",
+        "Signal arrows called transport"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-06",
+      "task": "Cell interior with selective detail",
+      "brief": "Where are the named cellular structures?",
+      "layout": "cell-interior",
+      "required_inputs": [
+        "Cell type",
+        "Organelle subset",
+        "Scale policy"
+      ],
+      "critical_failures": [
+        "Every organelle given equal emphasis",
+        "False measured size relationships"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-07",
+      "task": "Matched structural comparison",
+      "brief": "What precisely differs between the two states?",
+      "layout": "paired-state",
+      "required_inputs": [
+        "State definitions",
+        "Evidence or explicit hypothetical status",
+        "Locked comparison settings"
+      ],
+      "critical_failures": [
+        "Treatment efficacy implied by invented improvement",
+        "Changing every visual variable"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-08",
+      "task": "Research workflow",
+      "brief": "What material or information passes between stages?",
+      "layout": "study-workflow",
+      "required_inputs": [
+        "Actual workflow scope",
+        "Stage definitions",
+        "Output type"
+      ],
+      "critical_failures": [
+        "Fictional plots as results",
+        "Decorative dashboard cards"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-09",
+      "task": "Nested biological scales",
+      "brief": "How does local structure relate to the larger context?",
+      "layout": "multiscale-zoom",
+      "required_inputs": [
+        "Source region",
+        "Local feature",
+        "Scale evidence"
+      ],
+      "critical_failures": [
+        "Uniform scale bars on unequal magnification",
+        "Floating inset without origin"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-10",
+      "task": "Selective cutaway",
+      "brief": "What is hidden beneath an intact surface?",
+      "layout": "cutaway",
+      "required_inputs": [
+        "Reference anatomy",
+        "Cut plane",
+        "Removed structures"
+      ],
+      "critical_failures": [
+        "Transparency that erases structures",
+        "Implausible resection"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-11",
+      "task": "Exploded laminar anatomy",
+      "brief": "What is the order of normally apposed layers?",
+      "layout": "exploded-layers",
+      "required_inputs": [
+        "Layer order",
+        "Displacement direction",
+        "Attachment information"
+      ],
+      "critical_failures": [
+        "Rearranging layers to fit labels",
+        "Artificial gaps interpreted as pathology"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-12",
+      "task": "Plane-to-section registration",
+      "brief": "Where was this section taken?",
+      "layout": "section-registration",
+      "required_inputs": [
+        "Source volume or reviewed plate",
+        "Plane normal",
+        "Registration landmarks"
+      ],
+      "critical_failures": [
+        "Radiological display silently reflected",
+        "Section from a different level"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-13",
+      "task": "Reviewed procedural sequence",
+      "brief": "How do exposures and relationships change over time?",
+      "layout": "surgical-sequence",
+      "required_inputs": [
+        "Approved step list",
+        "Clinical specialist",
+        "Reference anatomy"
+      ],
+      "critical_failures": [
+        "Invented operative steps",
+        "Unsafe instructions without clinical context"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-14",
+      "task": "Innervation territory map",
+      "brief": "Which route reaches which territory?",
+      "layout": "innervation-map",
+      "required_inputs": [
+        "Verified course",
+        "Landmarks",
+        "Variant policy"
+      ],
+      "critical_failures": [
+        "Curves added as decorative nerves",
+        "Branch names attached to wrong level"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-15",
+      "task": "Directed circulation route",
+      "brief": "Which named vessels connect these regions?",
+      "layout": "vascular-route",
+      "required_inputs": [
+        "Connectivity table",
+        "Flow scope",
+        "Included/excluded beds"
+      ],
+      "critical_failures": [
+        "Impossible anastomosis",
+        "Generic red/blue meaning unexplained"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-16",
+      "task": "Organ topography",
+      "brief": "Which neighbouring structures determine location?",
+      "layout": "organ-topography",
+      "required_inputs": [
+        "Species and life stage",
+        "Reviewed regional anatomy",
+        "Depth plan"
+      ],
+      "critical_failures": [
+        "Independent icons placed in a silhouette",
+        "Patient variation erased"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-17",
+      "task": "Histology-derived explanatory schema",
+      "brief": "Which tissue organisation should the reader recognise?",
+      "layout": "histology-schema",
+      "required_inputs": [
+        "Actual reference material",
+        "Structural thesis",
+        "Schematic disclosure"
+      ],
+      "critical_failures": [
+        "Invented histology passed as observed",
+        "Cytology diagnosis from illustrative texture"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-18",
+      "task": "Structure-based binding view",
+      "brief": "Where is a supported molecular interaction located?",
+      "layout": "structure-binding",
+      "required_inputs": [
+        "PDB/source file",
+        "Source paper",
+        "Representation and ligand state"
+      ],
+      "critical_failures": [
+        "Invented atom contacts",
+        "Random protein blob called crystal structure"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-19",
+      "task": "Reaction-centred network",
+      "brief": "What is consumed, produced or regulates a process?",
+      "layout": "reaction-network",
+      "required_inputs": [
+        "Reaction definitions",
+        "Evidence",
+        "Named notation"
+      ],
+      "critical_failures": [
+        "Activation arrow used as mass flow",
+        "Mixed SBGN dialects"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-20",
+      "task": "Feedback organisation",
+      "brief": "What returns to regulate an earlier process?",
+      "layout": "feedback-loop",
+      "required_inputs": [
+        "Edge claims",
+        "Mechanism boundary",
+        "Feedback evidence"
+      ],
+      "critical_failures": [
+        "Circular layout treated as temporal proof",
+        "Inhibition confused with absence"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-21",
+      "task": "Two-cell interface",
+      "brief": "What changes at a specific contact?",
+      "layout": "cell-interaction",
+      "required_inputs": [
+        "Cell types",
+        "Molecular sides",
+        "Interaction evidence"
+      ],
+      "critical_failures": [
+        "Receptor on wrong cell",
+        "Cells fused unintentionally"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-22",
+      "task": "Developmental sequence",
+      "brief": "Which changes are attributable to developmental stage?",
+      "layout": "developmental-series",
+      "required_inputs": [
+        "Stage references",
+        "Scale policy",
+        "Landmark correspondences"
+      ],
+      "critical_failures": [
+        "Adult proportions shrunk to represent children",
+        "Cross-species stage mixing"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-23",
+      "task": "Localised pathological change",
+      "brief": "Where does the supported change occur?",
+      "layout": "pathology-localisation",
+      "required_inputs": [
+        "Disease context",
+        "Reference material",
+        "Clinical reviewer"
+      ],
+      "critical_failures": [
+        "Impossible invasion routes",
+        "Disease severity inferred without data"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    },
+    {
+      "id": "MED-24",
+      "task": "Device in anatomical context",
+      "brief": "How does a device relate to the surrounding structure?",
+      "layout": "device-anatomy",
+      "required_inputs": [
+        "Reviewed device geometry",
+        "Anatomical references",
+        "Intended-use statement"
+      ],
+      "critical_failures": [
+        "Device floating through tissue",
+        "Off-label use implied without context"
+      ],
+      "reference_answer": "Must be authored or approved by independent subject experts for the specific brief.",
+      "ratings": null
+    }
+  ],
+  "weights": {
+    "scientific_accuracy": 30,
+    "spatial_topology": 20,
+    "communication": 20,
+    "visual_craft": 15,
+    "accessibility": 5,
+    "editability_reproducibility": 5,
+    "licensing_traceability": 5
+  },
+  "scale": "Each domain rated 0 to 4. Weighted total / 4 yields 0 to 100. Any critical error fails regardless of total.",
+  "evaluation": "At least two independent blinded reviewers per domain; predefine references, randomize display order, record disagreements and confidence intervals. Human reviews are not supplied."
+}

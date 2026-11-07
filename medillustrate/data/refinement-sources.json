@@ -1,0 +1,77 @@
+{
+  "checked": "2026-10-05",
+  "sources": [
+    {
+      "id": "figurelabs-product",
+      "publisher": "FigureLabs",
+      "title": "Scientific figure workflow",
+      "url": "https://www.figurelabs.ai/",
+      "use": "Product statements, not independent performance evidence.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "figurelabs-docs",
+      "publisher": "FigureLabs",
+      "title": "Product documentation",
+      "url": "https://www.figurelabs.ai/docs",
+      "use": "Chat and canvas; selected-region editing; visual consistency; export.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "figurelabs-api",
+      "publisher": "FigureLabs",
+      "title": "Developer API documentation",
+      "url": "https://www.figurelabs.ai/api/docs",
+      "use": "Generation/editing request fields, task lifecycle, reference images, region mask, output expiry.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "figurelabs-mcp",
+      "publisher": "FigureLabs",
+      "title": "MCP product description",
+      "url": "https://www.figurelabs.ai/mcp",
+      "use": "External agent access and account authorization.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "ollama-chat",
+      "publisher": "Ollama",
+      "title": "Generate a chat message",
+      "url": "https://docs.ollama.com/api/chat",
+      "use": "JSON schema output and non-streaming chat request.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "mcp-server",
+      "publisher": "Model Context Protocol",
+      "title": "Build a server",
+      "url": "https://modelcontextprotocol.io/docs/develop/build-server",
+      "use": "Tool and resource separation; stdio transport.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "openstax-kidney-gross",
+      "publisher": "OpenStax",
+      "title": "Anatomy and Physiology 2e, 25.3",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney",
+      "use": "Gross renal structures. Reference text only; no source artwork copied.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "openstax-vessels",
+      "publisher": "OpenStax",
+      "title": "Anatomy and Physiology 2e, 20.1",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-1-structure-and-function-of-blood-vessels",
+      "use": "Vessel coats and muscular arterial structure. Reference text only.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "openstax-peripheral-nerves",
+      "publisher": "OpenStax",
+      "title": "Anatomy and Physiology 2e, 13.4",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-4-the-peripheral-nervous-system",
+      "use": "Nerve connective tissue compartments. Reference text only.",
+      "accessed": "2026-10-05"
+    }
+  ]
+}

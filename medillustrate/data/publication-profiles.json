@@ -1,0 +1,68 @@
+{
+  "checked": "2026-10-05",
+  "profiles": [
+    {
+      "id": "editorial-vector",
+      "name": "Generic editorial vector house profile",
+      "width_mm": 180,
+      "minimum_label_pt": 7,
+      "preferred_formats": [
+        "svg",
+        "pdf"
+      ],
+      "raster_dpi": 300,
+      "status": "house-default-not-journal-policy",
+      "conditions": [
+        "Review at final physical dimensions",
+        "Check target journal separately",
+        "Use lossless export for line art"
+      ]
+    },
+    {
+      "id": "presentation",
+      "name": "Screen presentation house profile",
+      "width_mm": 320,
+      "minimum_label_pt": 16,
+      "preferred_formats": [
+        "svg",
+        "png"
+      ],
+      "raster_dpi": 150,
+      "status": "house-default-not-journal-policy",
+      "conditions": [
+        "Test at actual projection/viewing size",
+        "Avoid label-dense anatomical plates"
+      ]
+    },
+    {
+      "id": "elsevier-check",
+      "name": "Elsevier AI policy decision aid",
+      "status": "human-policy-check-required",
+      "source": "elsevier-ai",
+      "conditions": [
+        "Classify explanatory diagram vs data figure vs research image vs graphical abstract",
+        "Follow current disclosure and oversight rules",
+        "Do not use general-purpose AI image generators for graphical abstracts under the reviewed policy",
+        "Check the specific journal and editor before final submission"
+      ]
+    },
+    {
+      "id": "nature-check",
+      "name": "Nature Portfolio AI policy",
+      "status": "full-policy-not-retrieved",
+      "source": "nature-ai",
+      "conditions": [
+        "Read current official policy; no automatic approval"
+      ]
+    },
+    {
+      "id": "plos-check",
+      "name": "PLOS ONE technical figure guidance",
+      "status": "human-policy-check-required",
+      "source": "plos-figures",
+      "conditions": [
+        "Recheck current accepted format, resolution, dimensions and image integrity policy before submission"
+      ]
+    }
+  ]
+}

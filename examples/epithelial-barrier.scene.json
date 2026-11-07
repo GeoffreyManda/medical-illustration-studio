@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0.0",
+  "id": "epithelial-barrier",
+  "title": "The epithelial barrier",
+  "subtitle": "A continuous tissue section, from the lumen to the supporting tissue",
+  "description": "An explanatory section of a polarised epithelial sheet. Its apical surface and microvilli are above the cell bodies; a goblet cell lies among columnar cells. Junctions lie between neighbouring cells, and a basement membrane separates the epithelial layer from the underlying connective tissue.",
+  "audience": "scientific",
+  "representation": "schematic",
+  "frame": {
+    "species": "human, conceptual unless specified",
+    "life_stage": "not specified",
+    "view": "schematic projection",
+    "laterality": "not-applicable",
+    "scale_policy": "not-to-scale",
+    "projection": "orthographic schematic"
+  },
+  "canvas": {
+    "width": 1200,
+    "height": 800,
+    "print_width_mm": 180,
+    "background": "#FFFFFF",
+    "text_colour": "#354753",
+    "minimum_label_pt": 7
+  },
+  "layout": "epithelial-section",
+  "sources": [
+    {
+      "id": "openstax-epithelium",
+      "title": "OpenStax A&P 2e, 4.2 Epithelial Tissue",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-2-epithelial-tissue",
+      "kind": "reference"
+    }
+  ],
+  "claims": [
+    {
+      "id": "structure",
+      "text": "An explanatory section of a polarised epithelial sheet. Its apical surface and microvilli are above the cell bodies; a goblet cell lies among columnar cells. Junctions lie between neighbouring cells, and a basement membrane separates the epithelial layer from the underlying connective tissue.",
+      "status": "established",
+      "sources": [
+        "openstax-epithelium"
+      ]
+    }
+  ],
+  "compartments": [],
+  "nodes": [
+    {
+      "id": "sheet",
+      "asset": "epithelial-sheet",
+      "box": [
+        135,
+        220,
+        930,
+        362
+      ]
+    }
+  ],
+  "edges": [],
+  "labels": [
+    {
+      "id": "lumen",
+      "text": "LUMEN",
+      "box": [
+        50,
+        152,
+        180,
+        32
+      ],
+      "role": "heading",
+      "font_size": 20
+    },
+    {
+      "id": "microvilli",
+      "text": "Microvilli",
+      "box": [
+        230,
+        154,
+        155,
+        30
+      ],
+      "leader_via": [
+        [
+          292,
+          220
+        ]
+      ],
+      "target": {
+        "node": "sheet",
+        "landmark": "microvilli"
+      }
+    },
+    {
+      "id": "junction",
+      "text": "Intercellular junction",
+      "box": [
+        435,
+        152,
+        245,
+        32
+      ],
+      "leader_via": [
+        [
+          428,
+          220
+        ]
+      ],
+      "target": {
+        "node": "sheet",
+        "landmark": "junction"
+      }
+    },
+    {
+      "id": "mucin",
+      "text": "Mucin granules",
+      "box": [
+        767,
+        152,
+        210,
+        32
+      ],
+      "leader_via": [
+        [
+          836,
+          202
+        ]
+      ],
+      "target": {
+        "node": "sheet",
+        "landmark": "mucin"
+      }
+    },
+    {
+      "id": "nucleus",
+      "text": "Nucleus",
+      "box": [
+        50,
+        586,
+        120,
+        30
+      ],
+      "leader_via": [
+        [
+          182,
+          562
+        ]
+      ],
+      "target": {
+        "node": "sheet",
+        "landmark": "nucleus"
+      }
+    },
+    {
+      "id": "basement",
+      "text": "Basement membrane",
+      "box": [
+        332,
+        597,
+        235,
+        32
+      ],
+      "leader_via": [
+        [
+          398,
+          570
+        ]
+      ],
+      "target": {
+        "node": "sheet",
+        "landmark": "basement-membrane"
+      }
+    },
+    {
+      "id": "goblet",
+      "text": "Goblet cell",
+      "box": [
+        792,
+        597,
+        140,
+        32
+      ],
+      "leader_via": [
+        [
+          766,
+          574
+        ],
+        [
+          766,
+          422
+        ]
+      ],
+      "target": {
+        "node": "sheet",
+        "landmark": "goblet-cell"
+      }
+    },
+    {
+      "id": "stroma",
+      "text": "CONNECTIVE TISSUE",
+      "box": [
+        50,
+        654,
+        260,
+        30
+      ],
+      "role": "heading",
+      "font_size": 18
+    }
+  ],
+  "caption": "Schematic; not to scale. Cell number and dimensions are illustrative. Anatomy reference: OpenStax, Anatomy and Physiology 2e, section 4.2."
+}

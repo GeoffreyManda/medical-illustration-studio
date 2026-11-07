@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 90
+    },
+    "subtitle": {
+      "type": "string",
+      "maxLength": 140
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 3000
+    },
+    "asset": {
+      "type": "string"
+    },
+    "width": {
+      "type": "number",
+      "minimum": 600,
+      "maximum": 2400
+    },
+    "height": {
+      "type": "number",
+      "minimum": 600,
+      "maximum": 3000
+    },
+    "print_width_mm": {
+      "type": "number",
+      "minimum": 80,
+      "maximum": 500
+    },
+    "label_size": {
+      "type": "number",
+      "minimum": 10,
+      "maximum": 32
+    },
+    "label_bank_width": {
+      "type": "number",
+      "minimum": 90,
+      "maximum": 320
+    },
+    "art_box": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "anatomy": {
+      "type": "object",
+      "properties": {
+        "species": {
+          "const": "Homo sapiens"
+        },
+        "life_stage": {
+          "type": "string"
+        },
+        "view": {
+          "type": "string"
+        },
+        "laterality": {
+          "enum": [
+            "left",
+            "right",
+            "unspecified",
+            "not-applicable"
+          ]
+        }
+      },
+      "required": [
+        "species",
+        "life_stage",
+        "view",
+        "laterality"
+      ],
+      "additionalProperties": false
+    },
+    "labels": {
+      "type": "array",
+      "maxItems": 30,
+      "items": {
+        "type": "object",
+        "properties": {
+          "landmark": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "side": {
+            "enum": [
+              "left",
+              "right"
+            ]
+          },
+          "y": {
+            "type": "number",
+            "minimum": 140,
+            "maximum": 2800
+          },
+          "target": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "target_note": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "landmark",
+          "text",
+          "side"
+        ],
+        "additionalProperties": false,
+        "dependentRequired": {
+          "target": [
+            "target_note"
+          ]
+        }
+      }
+    },
+    "caption": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "reference_line": {
+      "type": "string",
+      "maxLength": 180
+    },
+    "intended_use": {
+      "enum": [
+        "educational-draft",
+        "clinical-publication"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "subtitle",
+    "description",
+    "asset",
+    "width",
+    "height",
+    "print_width_mm",
+    "label_size",
+    "label_bank_width",
+    "art_box",
+    "anatomy",
+    "labels",
+    "caption",
+    "reference_line",
+    "intended_use"
+  ],
+  "additionalProperties": false
+}

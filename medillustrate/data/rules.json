@@ -1,0 +1,686 @@
+{
+  "version": "1.0.0",
+  "scope": "The method field is a capability boundary: expert rules are not automatically certified.",
+  "rules": [
+    {
+      "id": "FMT-01",
+      "domain": "syntax",
+      "requirement": "Scene satisfies the shipped JSON Schema.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "FMT-02",
+      "domain": "syntax",
+      "requirement": "All IDs are unique within their namespace.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "FMT-03",
+      "domain": "syntax",
+      "requirement": "Every reference resolves.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "FMT-04",
+      "domain": "syntax",
+      "requirement": "All numeric input is finite; dimensions are positive and bounded.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "FMT-05",
+      "domain": "syntax",
+      "requirement": "Unknown properties are rejected rather than silently ignored.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEM-01",
+      "domain": "semantics",
+      "requirement": "Every biological relationship cites a claim.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEM-02",
+      "domain": "semantics",
+      "requirement": "Every established claim resolves to declared sources.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEM-03",
+      "domain": "semantics",
+      "requirement": "Every proposed or hypothetical relationship is visibly distinguished.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEM-04",
+      "domain": "semantics",
+      "requirement": "Association is undirected and is not depicted as causation.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEM-05",
+      "domain": "semantics",
+      "requirement": "Zoom and label leaders carry no causal arrowhead.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEM-06",
+      "domain": "semantics",
+      "requirement": "Reaction consumes/produces routes touch a process node.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEM-07",
+      "domain": "semantics",
+      "requirement": "Displayed edge label identifies the kind of relation when requested.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEM-08",
+      "domain": "semantics",
+      "requirement": "An authoritative source genuinely supports each asserted biological claim.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEM-09",
+      "domain": "semantics",
+      "requirement": "No measured counts, stoichiometry or dose response are invented.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEM-10",
+      "domain": "semantics",
+      "requirement": "Mechanistic direction is warranted, not inferred from correlation alone.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEM-11",
+      "domain": "semantics",
+      "requirement": "Notation is either declared house notation or independently validated formal notation.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "GEO-01",
+      "domain": "geometry",
+      "requirement": "Every scene object remains within canvas bounds.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "GEO-02",
+      "domain": "geometry",
+      "requirement": "Asset scaling preserves aspect ratio.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "GEO-03",
+      "domain": "geometry",
+      "requirement": "Named landmarks exist before a connector can target them.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "GEO-04",
+      "domain": "geometry",
+      "requirement": "A contained node lies inside its declared rectangular compartment.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "GEO-05",
+      "domain": "geometry",
+      "requirement": "A boundary-spanning node intersects the declared compartment boundary.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "GEO-06",
+      "domain": "geometry",
+      "requirement": "Mirroring is forbidden when the asset is not mirror-safe.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "GEO-07",
+      "domain": "geometry",
+      "requirement": "Actual patient laterality and plane remain correct after composition.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "GEO-08",
+      "domain": "geometry",
+      "requirement": "Crossing vessels or nerves do not create accidental connectivity.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "GEO-09",
+      "domain": "geometry",
+      "requirement": "Registration between locator and section is anatomically valid.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "GEO-10",
+      "domain": "geometry",
+      "requirement": "Cut edges, hidden surfaces and exposed lumens are distinguished.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "GEO-11",
+      "domain": "geometry",
+      "requirement": "Rectangular containment is not claimed to prove polygonal or anatomical containment.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "GEO-12",
+      "domain": "geometry",
+      "requirement": "Diagram orientation is not substituted for a DICOM coordinate transform.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "TXT-01",
+      "domain": "labels",
+      "requirement": "Label boxes remain on canvas.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "TXT-02",
+      "domain": "labels",
+      "requirement": "Final print label size meets the selected house threshold.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "TXT-03",
+      "domain": "labels",
+      "requirement": "Multiline text fits its declared box using the available font metrics.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "TXT-04",
+      "domain": "labels",
+      "requirement": "Label boxes do not overlap one another.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "TXT-05",
+      "domain": "labels",
+      "requirement": "Every leader endpoint is semantically and anatomically correct.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "TXT-06",
+      "domain": "labels",
+      "requirement": "Terminology, abbreviations and species conventions are correct.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "TXT-07",
+      "domain": "labels",
+      "requirement": "Line crossings and leader routes do not cause visual ambiguity.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "TXT-08",
+      "domain": "labels",
+      "requirement": "Labels retain legibility after actual journal scaling.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "VIS-01",
+      "domain": "art-direction",
+      "requirement": "One scientific message determines the composition.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "VIS-02",
+      "domain": "art-direction",
+      "requirement": "Silhouette, topology and relationships are resolved before texture.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "VIS-03",
+      "domain": "art-direction",
+      "requirement": "Detail has a scientific function instead of decorative density.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "VIS-04",
+      "domain": "art-direction",
+      "requirement": "Light and shadow are coherent and do not imply false tissue boundaries.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "VIS-05",
+      "domain": "art-direction",
+      "requirement": "Line weight separates contour, section, internal detail and annotation.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "VIS-06",
+      "domain": "art-direction",
+      "requirement": "Colours have stable declared meanings.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "VIS-07",
+      "domain": "art-direction",
+      "requirement": "Normal/altered comparisons lock viewpoint and scale.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "VIS-08",
+      "domain": "art-direction",
+      "requirement": "Important information survives grayscale and colour-vision review.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "VIS-09",
+      "domain": "art-direction",
+      "requirement": "No card grid replaces a needed biological scene.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "VIS-10",
+      "domain": "art-direction",
+      "requirement": "Final output is reviewed at use size, not only enlarged.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "ACC-01",
+      "domain": "accessibility",
+      "requirement": "SVG includes an accessible title and description.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "ACC-02",
+      "domain": "accessibility",
+      "requirement": "Canvas text contrast meets the house 4.5:1 threshold.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "ACC-03",
+      "domain": "accessibility",
+      "requirement": "Colour is never the only carrier of scientific meaning.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "ACC-04",
+      "domain": "accessibility",
+      "requirement": "Complex figures have a useful long description.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "ACC-05",
+      "domain": "accessibility",
+      "requirement": "Patient educational content is tested for comprehension.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SCI-01",
+      "domain": "anatomy",
+      "requirement": "Species, life stage, view, laterality and scale policy are declared.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SCI-02",
+      "domain": "anatomy",
+      "requirement": "Anatomical mode does not accept schematic assets as anatomical evidence.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SCI-03",
+      "domain": "anatomy",
+      "requirement": "Scale bars require a declared calibration, not guessed dimensions.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SCI-04",
+      "domain": "anatomy",
+      "requirement": "Tissue proportions and branching are checked against reference evidence.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SCI-05",
+      "domain": "anatomy",
+      "requirement": "Vessel direction and oxygenation are not conflated.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SCI-06",
+      "domain": "anatomy",
+      "requirement": "Paediatric anatomy is not a uniformly shrunken adult.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SCI-07",
+      "domain": "anatomy",
+      "requirement": "Normal variants and omitted structures are stated where material.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SCI-08",
+      "domain": "anatomy",
+      "requirement": "A protein blob is not presented as a measured molecular structure.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SCI-09",
+      "domain": "anatomy",
+      "requirement": "Molecular chirality or assembly is not invented.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SCI-10",
+      "domain": "anatomy",
+      "requirement": "Histology or radiology-like art is never passed off as observed research data.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "LIC-01",
+      "domain": "licensing",
+      "requirement": "Every asset declares creator, licence and provenance/reference fields.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "LIC-02",
+      "domain": "licensing",
+      "requirement": "Imported SVG requires source URL and creator.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "LIC-03",
+      "domain": "licensing",
+      "requirement": "Proprietary atlas or BioRender assets are not extracted into this library.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "LIC-04",
+      "domain": "licensing",
+      "requirement": "Per-asset licence conditions are checked before distribution.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "LIC-05",
+      "domain": "licensing",
+      "requirement": "Attributions survive adaptation, export and transfer.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "LIC-06",
+      "domain": "licensing",
+      "requirement": "Patient data is not uploaded without authority and consent where required.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "LIC-07",
+      "domain": "licensing",
+      "requirement": "The target journal AI policy is checked for the actual figure category.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEC-01",
+      "domain": "security",
+      "requirement": "SVG scripts, foreignObject, event handlers and external references are rejected.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEC-02",
+      "domain": "security",
+      "requirement": "XML entities and DTD declarations are rejected.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEC-03",
+      "domain": "security",
+      "requirement": "Unsupported SVG constructs are rejected rather than silently flattened.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEC-04",
+      "domain": "security",
+      "requirement": "Input file size and canvas/raster dimensions are bounded.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEC-05",
+      "domain": "security",
+      "requirement": "Writes refuse accidental overwrite unless explicitly permitted.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEC-06",
+      "domain": "security",
+      "requirement": "The tool never downloads external assets during rendering.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "REL-01",
+      "domain": "release",
+      "requirement": "Publication mode requires human review tied to the current scene and asset hashes.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "REL-02",
+      "domain": "release",
+      "requirement": "A changed scene invalidates an old review.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "REL-03",
+      "domain": "release",
+      "requirement": "Approval records include identity, role, date and explicit approval.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "REL-04",
+      "domain": "release",
+      "requirement": "An agent cannot stand in for an independent qualified medical reviewer.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "REL-05",
+      "domain": "release",
+      "requirement": "A renderer pass is not described as clinical or publication certification.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "REL-06",
+      "domain": "release",
+      "requirement": "Critical anatomical or integrity errors cannot be averaged away by aesthetics.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "REL-07",
+      "domain": "release",
+      "requirement": "Control records stay separate from the illustration and its caption.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "REL-08",
+      "domain": "release",
+      "requirement": "Market-superiority claims require a real comparative evaluation.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEM-12",
+      "domain": "structural-relations",
+      "requirement": "Anatomical relations resolve and proper part-of relations are acyclic.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SEM-13",
+      "domain": "structural-relations",
+      "requirement": "Direct opposite spatial relations cannot simultaneously hold for the same pair in the declared frame.",
+      "method": "machine",
+      "severity": "error",
+      "source": "house-design"
+    },
+    {
+      "id": "SCI-11",
+      "domain": "structural-relations",
+      "requirement": "Anatomical spatial relations are checked against the declared projection and reference geometry; screen coordinates alone do not establish them.",
+      "method": "expert",
+      "severity": "error",
+      "source": "house-design"
+    }
+  ]
+}

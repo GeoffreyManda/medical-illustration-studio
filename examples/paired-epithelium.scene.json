@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0.0",
+  "id": "paired-epithelium",
+  "title": "A matched view preserves the comparison",
+  "subtitle": "The same tissue geometry, shown at the same scale, supports two reading tasks",
+  "description": "Two identical epithelial sections are displayed at a shared scale. The left annotation identifies cellular organisation; the right identifies the basal interface. Only the annotation changes. The figure does not depict disease, treatment, before-and-after improvement or measured clinical data.",
+  "audience": "scientific",
+  "representation": "schematic",
+  "frame": {
+    "species": "human, conceptual unless specified",
+    "life_stage": "not specified",
+    "view": "schematic projection",
+    "laterality": "not-applicable",
+    "scale_policy": "not-to-scale",
+    "projection": "orthographic schematic"
+  },
+  "canvas": {
+    "width": 1200,
+    "height": 800,
+    "print_width_mm": 180,
+    "background": "#FFFFFF",
+    "text_colour": "#354753",
+    "minimum_label_pt": 7
+  },
+  "layout": "paired-state",
+  "sources": [
+    {
+      "id": "openstax-epithelium",
+      "title": "OpenStax A&P 2e, 4.2 Epithelial Tissue",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-2-epithelial-tissue",
+      "kind": "reference"
+    }
+  ],
+  "claims": [
+    {
+      "id": "structure",
+      "text": "Two identical epithelial sections are displayed at a shared scale. The left annotation identifies cellular organisation; the right identifies the basal interface. Only the annotation changes. The figure does not depict disease, treatment, before-and-after improvement or measured clinical data.",
+      "status": "established",
+      "sources": [
+        "openstax-epithelium"
+      ]
+    }
+  ],
+  "compartments": [],
+  "nodes": [
+    {
+      "id": "left-tissue",
+      "asset": "epithelial-sheet",
+      "box": [
+        68,
+        283,
+        496,
+        193
+      ]
+    },
+    {
+      "id": "right-tissue",
+      "asset": "epithelial-sheet",
+      "box": [
+        634,
+        283,
+        496,
+        193
+      ]
+    }
+  ],
+  "edges": [],
+  "labels": [
+    {
+      "id": "A",
+      "text": "A  Cellular organisation",
+      "box": [
+        68,
+        165,
+        462,
+        42
+      ],
+      "font_size": 24,
+      "role": "heading"
+    },
+    {
+      "id": "B",
+      "text": "B  Basal interface",
+      "box": [
+        634,
+        165,
+        462,
+        42
+      ],
+      "font_size": 24,
+      "role": "heading"
+    },
+    {
+      "id": "goblet",
+      "text": "Goblet cell",
+      "box": [
+        173,
+        539,
+        180,
+        32
+      ],
+      "leader_via": [
+        [
+          346,
+          512
+        ],
+        [
+          346,
+          407
+        ]
+      ],
+      "target": {
+        "node": "left-tissue",
+        "landmark": "goblet-cell"
+      }
+    },
+    {
+      "id": "basement",
+      "text": "Basement membrane",
+      "box": [
+        779,
+        539,
+        281,
+        32
+      ],
+      "leader_via": [
+        [
+          876,
+          509
+        ]
+      ],
+      "target": {
+        "node": "right-tissue",
+        "landmark": "basement-membrane"
+      }
+    },
+    {
+      "id": "shared",
+      "text": "Identical geometry and scale",
+      "box": [
+        402,
+        649,
+        420,
+        32
+      ],
+      "align": "centre",
+      "role": "heading"
+    }
+  ],
+  "caption": "Matched explanatory views; not patient observations. Geometry, orientation and magnification are fixed. Only the selected label changes; no disease or treatment effect is implied."
+}

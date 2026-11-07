@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medillustrate"
+version = "2.1.0"
+description = "Versioned local medical illustration workspace, atlas grammar, editable vectors and bounded agent tools"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT for software; original artwork offered under CC0-1.0"}
+dependencies = ["jsonschema>=4.18,<5", "defusedxml>=0.7,<1"]
+
+[project.optional-dependencies]
+studio = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "httpx>=0.27,<1", "pypdf>=5,<7", "python-pptx>=1,<2", "CairoSVG>=2.7,<3", "Pillow>=10,<13"]
+docs = ["markdown-it-py>=3,<5"]
+export = ["CairoSVG>=2.7,<3", "Pillow>=10,<13"]
+test = ["fastapi>=0.115,<1", "httpx>=0.27,<1", "pypdf>=5,<7", "python-pptx>=1,<2", "playwright>=1.49,<2", "pytest>=8,<10", "CairoSVG>=2.7,<3", "Pillow>=10,<13"]
+
+[project.scripts]
+medillustrate = "medillustrate.cli:main"
+medillustrate-studio = "medillustrate.server:main"
+medillustrate-mcp = "medillustrate.mcp_server:main"
+
+[tool.setuptools.packages.find]
+include = ["medillustrate*"]
+
+[tool.setuptools.package-data]
+medillustrate = ["data/*.json", "static/*.html", "static/*.css", "static/*.js"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

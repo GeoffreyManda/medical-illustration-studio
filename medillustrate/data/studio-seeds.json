@@ -1,0 +1,2057 @@
+{
+  "templates": [
+    {
+      "id": "atlas-kidney-section",
+      "kind": "plate",
+      "name": "Kidney \u00b7 section",
+      "document": {
+        "schema_version": "2.0.0",
+        "id": "atlas-kidney-section",
+        "title": "Kidney",
+        "subtitle": "Coronal section with the collecting system opened",
+        "description": "A section through an idealised adult human kidney shows cortical tissue, medullary pyramids and the opened collecting system. Selected hilar vessels are retained.",
+        "asset": "atlas-kidney-section",
+        "width": 1000,
+        "height": 1190,
+        "print_width_mm": 190,
+        "label_size": 17,
+        "label_bank_width": 174,
+        "art_box": [
+          204,
+          142,
+          610,
+          889
+        ],
+        "anatomy": {
+          "species": "Homo sapiens",
+          "life_stage": "adult, idealised",
+          "view": "coronal illustrative section",
+          "laterality": "unspecified"
+        },
+        "labels": [
+          {
+            "landmark": "capsule",
+            "text": "Fibrous capsule",
+            "side": "left"
+          },
+          {
+            "landmark": "cortex",
+            "text": "Renal cortex",
+            "side": "left"
+          },
+          {
+            "landmark": "medulla",
+            "text": "Renal pyramid",
+            "side": "left"
+          },
+          {
+            "landmark": "column",
+            "text": "Renal column",
+            "side": "left",
+            "y": 777
+          },
+          {
+            "landmark": "papilla",
+            "text": "Renal papilla",
+            "side": "left",
+            "y": 690
+          },
+          {
+            "landmark": "artery",
+            "text": "Renal artery",
+            "side": "right"
+          },
+          {
+            "landmark": "vein",
+            "text": "Renal vein",
+            "side": "right"
+          },
+          {
+            "landmark": "minor-calyx",
+            "text": "Minor calyx",
+            "side": "right",
+            "y": 665
+          },
+          {
+            "landmark": "pelvis",
+            "text": "Renal pelvis",
+            "side": "right",
+            "y": 733
+          },
+          {
+            "landmark": "major-calyx",
+            "text": "Major calyx",
+            "side": "right",
+            "y": 804
+          },
+          {
+            "landmark": "ureter",
+            "text": "Ureter",
+            "side": "right"
+          }
+        ],
+        "caption": "Illustrative coronal section. Calyces and renal pelvis are opened to show their continuity. Selected vessels only; not to scale.",
+        "reference_line": "Anatomical reference: OpenStax, Anatomy and Physiology 2e, section 25.3.",
+        "intended_use": "educational-draft"
+      }
+    },
+    {
+      "id": "atlas-arterial-wall",
+      "kind": "plate",
+      "name": "Muscular artery \u00b7 section",
+      "document": {
+        "schema_version": "2.0.0",
+        "id": "atlas-arterial-wall",
+        "title": "Muscular artery",
+        "subtitle": "Oblique section through the vessel wall",
+        "description": "An oblique section through an idealised muscular artery distinguishes the outer supporting coat, muscular media, internal elastic lamina, intima and lumen. Sparse surface vessels are shown.",
+        "asset": "atlas-arterial-wall",
+        "width": 1000,
+        "height": 1190,
+        "print_width_mm": 190,
+        "label_size": 17,
+        "label_bank_width": 174,
+        "art_box": [
+          164,
+          175,
+          687,
+          782
+        ],
+        "anatomy": {
+          "species": "Homo sapiens",
+          "life_stage": "adult, idealised",
+          "view": "oblique illustrative section",
+          "laterality": "not-applicable"
+        },
+        "labels": [
+          {
+            "landmark": "vasa-vasorum",
+            "text": "Vasa vasorum",
+            "side": "left"
+          },
+          {
+            "landmark": "outer-coat",
+            "text": "Outer connective tissue",
+            "side": "left"
+          },
+          {
+            "landmark": "adventitia",
+            "text": "Tunica adventitia",
+            "side": "left"
+          },
+          {
+            "landmark": "lumen",
+            "text": "Lumen",
+            "side": "right"
+          },
+          {
+            "landmark": "media",
+            "text": "Tunica media",
+            "side": "right"
+          },
+          {
+            "landmark": "elastic-lamina",
+            "text": "Internal elastic lamina",
+            "side": "right"
+          },
+          {
+            "landmark": "intima",
+            "text": "Tunica intima",
+            "side": "right"
+          }
+        ],
+        "caption": "Illustrative muscular artery. Wall thickness and layer proportions are exaggerated for visibility; not a quantitative histological section.",
+        "reference_line": "Anatomical reference: OpenStax, Anatomy and Physiology 2e, section 20.1.",
+        "intended_use": "educational-draft"
+      }
+    },
+    {
+      "id": "atlas-kidney-surface",
+      "kind": "plate",
+      "name": "Kidney \u00b7 surface",
+      "document": {
+        "schema_version": "2.0.0",
+        "id": "atlas-kidney-surface",
+        "title": "Kidney",
+        "subtitle": "External surface and structures at the hilum",
+        "description": "An idealised adult kidney has a convex lateral border, a concave medial hilum, a smooth capsular surface, renal artery, renal vein and ureter.",
+        "asset": "atlas-kidney-surface",
+        "width": 1000,
+        "height": 1190,
+        "print_width_mm": 190,
+        "label_size": 17,
+        "label_bank_width": 174,
+        "art_box": [
+          204,
+          142,
+          610,
+          889
+        ],
+        "anatomy": {
+          "species": "Homo sapiens",
+          "life_stage": "adult, idealised",
+          "view": "external illustrative view",
+          "laterality": "unspecified"
+        },
+        "labels": [
+          {
+            "landmark": "upper-pole",
+            "text": "Superior pole",
+            "side": "left"
+          },
+          {
+            "landmark": "lateral-border",
+            "text": "Lateral border",
+            "side": "left"
+          },
+          {
+            "landmark": "anterior-surface",
+            "text": "Capsular surface",
+            "side": "left"
+          },
+          {
+            "landmark": "lower-pole",
+            "text": "Inferior pole",
+            "side": "left"
+          },
+          {
+            "landmark": "artery",
+            "text": "Renal artery",
+            "side": "right"
+          },
+          {
+            "landmark": "vein",
+            "text": "Renal vein",
+            "side": "right"
+          },
+          {
+            "landmark": "hilum",
+            "text": "Renal hilum",
+            "side": "right"
+          },
+          {
+            "landmark": "ureter",
+            "text": "Ureter",
+            "side": "right"
+          }
+        ],
+        "caption": "External illustrative view. Hilar structures have been separated for clarity. No sided anatomical variation is implied; not to scale.",
+        "reference_line": "Anatomical reference: OpenStax, Anatomy and Physiology 2e, section 25.3.",
+        "intended_use": "educational-draft"
+      }
+    },
+    {
+      "id": "atlas-peripheral-nerve",
+      "kind": "plate",
+      "name": "Peripheral nerve \u00b7 section",
+      "document": {
+        "schema_version": "2.0.0",
+        "id": "atlas-peripheral-nerve",
+        "title": "Peripheral nerve",
+        "subtitle": "Oblique section showing fascicles and their envelopes",
+        "description": "An idealised peripheral nerve in oblique section contains several fascicles within the epineurium. Each fascicle is bounded by perineurium and contains illustrated myelinated fibres and endoneurial supporting tissue.",
+        "asset": "atlas-peripheral-nerve",
+        "width": 1000,
+        "height": 1190,
+        "print_width_mm": 190,
+        "label_size": 17,
+        "label_bank_width": 174,
+        "art_box": [
+          164,
+          175,
+          687,
+          782
+        ],
+        "anatomy": {
+          "species": "Homo sapiens",
+          "life_stage": "adult, idealised",
+          "view": "oblique illustrative section",
+          "laterality": "not-applicable"
+        },
+        "labels": [
+          {
+            "landmark": "longitudinal-bundles",
+            "text": "Longitudinal nerve trunk",
+            "side": "left"
+          },
+          {
+            "landmark": "myelinated-fibres",
+            "text": "Myelinated fibres",
+            "side": "left"
+          },
+          {
+            "landmark": "fascicle",
+            "text": "Nerve fascicle",
+            "side": "left"
+          },
+          {
+            "landmark": "endoneurium",
+            "text": "Endoneurial tissue",
+            "side": "right"
+          },
+          {
+            "landmark": "vasa-nervorum",
+            "text": "Small epineurial vessel",
+            "side": "right"
+          },
+          {
+            "landmark": "perineurium",
+            "text": "Perineurium",
+            "side": "right"
+          },
+          {
+            "landmark": "epineurium",
+            "text": "Epineurium",
+            "side": "right"
+          }
+        ],
+        "caption": "Illustrative nerve section. Fascicle and fibre counts are arbitrary; unmyelinated fibres are omitted. Not a quantitative histological section.",
+        "reference_line": "Anatomical reference: OpenStax, Anatomy and Physiology 2e, section 13.4.",
+        "intended_use": "educational-draft"
+      }
+    },
+    {
+      "id": "cell-interior",
+      "kind": "scene",
+      "name": "Selective detail inside a cell",
+      "document": {
+        "schema_version": "1.0.0",
+        "id": "cell-interior",
+        "title": "Selective detail inside a cell",
+        "subtitle": "Compartment relationships are preserved; relative sizes are explanatory",
+        "description": "A generic nucleated cell is shown with a nucleus, mitochondria, rough endoplasmic reticulum, Golgi apparatus and a lysosome. Organelles are contained within the cell outline. Their numbers and relative dimensions are chosen for explanation rather than representing a measured cell.",
+        "audience": "scientific",
+        "representation": "schematic",
+        "frame": {
+          "species": "human, conceptual unless specified",
+          "life_stage": "not specified",
+          "view": "schematic projection",
+          "laterality": "not-applicable",
+          "scale_policy": "not-to-scale",
+          "projection": "orthographic schematic"
+        },
+        "canvas": {
+          "width": 1200,
+          "height": 800,
+          "print_width_mm": 180,
+          "background": "#FFFFFF",
+          "text_colour": "#354753",
+          "minimum_label_pt": 7
+        },
+        "layout": "cell-interior",
+        "sources": [
+          {
+            "id": "openstax-organelles",
+            "title": "OpenStax A&P 2e, 3.2 Cytoplasm and Organelles",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-2-the-cytoplasm-and-cellular-organelles",
+            "kind": "reference"
+          }
+        ],
+        "claims": [
+          {
+            "id": "structure",
+            "text": "A generic nucleated cell is shown with a nucleus, mitochondria, rough endoplasmic reticulum, Golgi apparatus and a lysosome. Organelles are contained within the cell outline. Their numbers and relative dimensions are chosen for explanation rather than representing a measured cell.",
+            "status": "illustrative",
+            "sources": [
+              "openstax-organelles"
+            ]
+          }
+        ],
+        "compartments": [],
+        "nodes": [
+          {
+            "id": "cell",
+            "asset": "cell-outline",
+            "box": [
+              180,
+              123,
+              763,
+              568
+            ]
+          },
+          {
+            "id": "nucleus",
+            "asset": "nucleus",
+            "box": [
+              362,
+              316,
+              160,
+              183
+            ]
+          },
+          {
+            "id": "mito1",
+            "asset": "mitochondrion",
+            "box": [
+              628,
+              474,
+              153,
+              111
+            ]
+          },
+          {
+            "id": "mito2",
+            "asset": "mitochondrion",
+            "box": [
+              618,
+              241,
+              130,
+              109
+            ],
+            "rotation": 90
+          },
+          {
+            "id": "er",
+            "asset": "rough-er",
+            "box": [
+              545,
+              323,
+              187,
+              154
+            ]
+          },
+          {
+            "id": "golgi",
+            "asset": "golgi",
+            "box": [
+              405,
+              503,
+              132,
+              114
+            ]
+          },
+          {
+            "id": "lysosome",
+            "asset": "lysosome",
+            "box": [
+              724,
+              372,
+              80,
+              84
+            ]
+          },
+          {
+            "id": "vesicle",
+            "asset": "vesicle",
+            "box": [
+              706,
+              444,
+              43,
+              43
+            ]
+          }
+        ],
+        "edges": [],
+        "labels": [
+          {
+            "id": "membrane",
+            "text": "Plasma membrane",
+            "box": [
+              892,
+              493,
+              279,
+              34
+            ],
+            "leader_via": [
+              [
+                854,
+                504
+              ]
+            ],
+            "target": {
+              "node": "cell",
+              "landmark": "membrane"
+            }
+          },
+          {
+            "id": "nucleus-label",
+            "text": "Nucleus",
+            "box": [
+              70,
+              306,
+              175,
+              30
+            ],
+            "target": {
+              "node": "nucleus",
+              "landmark": "envelope-left"
+            }
+          },
+          {
+            "id": "mitochondrion",
+            "text": "Mitochondrion",
+            "box": [
+              857,
+              585,
+              256,
+              34
+            ],
+            "target": {
+              "node": "mito1",
+              "landmark": "outer-membrane"
+            }
+          },
+          {
+            "id": "er-label",
+            "text": "Rough endoplasmic reticulum",
+            "box": [
+              913,
+              305,
+              235,
+              56
+            ],
+            "leader_via": [
+              [
+                881,
+                366
+              ]
+            ],
+            "target": {
+              "node": "er",
+              "landmark": "cisterna"
+            }
+          },
+          {
+            "id": "golgi-label",
+            "text": "Golgi apparatus",
+            "box": [
+              80,
+              580,
+              205,
+              32
+            ],
+            "target": {
+              "node": "golgi",
+              "landmark": "centre"
+            }
+          },
+          {
+            "id": "lysosome-label",
+            "text": "Lysosome",
+            "box": [
+              921,
+              415,
+              190,
+              32
+            ],
+            "target": {
+              "node": "lysosome",
+              "landmark": "centre"
+            }
+          }
+        ],
+        "caption": "Schematic; not to scale. A generic cell, not a complete cell-type reconstruction. Organelle counts and positions are illustrative. Each selected structure remains individually editable.",
+        "relations": [
+          {
+            "id": "part-nucleus",
+            "subject": "nucleus",
+            "predicate": "part_of",
+            "object": "cell",
+            "claim": "structure"
+          },
+          {
+            "id": "part-mito1",
+            "subject": "mito1",
+            "predicate": "part_of",
+            "object": "cell",
+            "claim": "structure"
+          },
+          {
+            "id": "part-mito2",
+            "subject": "mito2",
+            "predicate": "part_of",
+            "object": "cell",
+            "claim": "structure"
+          },
+          {
+            "id": "part-er",
+            "subject": "er",
+            "predicate": "part_of",
+            "object": "cell",
+            "claim": "structure"
+          },
+          {
+            "id": "part-golgi",
+            "subject": "golgi",
+            "predicate": "part_of",
+            "object": "cell",
+            "claim": "structure"
+          },
+          {
+            "id": "part-lysosome",
+            "subject": "lysosome",
+            "predicate": "part_of",
+            "object": "cell",
+            "claim": "structure"
+          },
+          {
+            "id": "part-vesicle",
+            "subject": "vesicle",
+            "predicate": "part_of",
+            "object": "cell",
+            "claim": "structure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cell-signalling",
+      "kind": "scene",
+      "name": "A signal is not a transported molecule",
+      "document": {
+        "schema_version": "1.0.0",
+        "id": "cell-signalling",
+        "title": "A signal is not a transported molecule",
+        "subtitle": "House notation separates association, activation and inhibition",
+        "description": "An intentionally hypothetical signalling example. A ligand associates with an extracellular receptor domain. The receptor is shown at a membrane boundary. A proposed intracellular activation leads to a generic effector, while a second proposed relation inhibits the effector. Dashed relationships are illustrative, not an asserted named pathway.",
+        "audience": "scientific",
+        "representation": "schematic",
+        "frame": {
+          "species": "human, conceptual unless specified",
+          "life_stage": "not specified",
+          "view": "schematic projection",
+          "laterality": "not-applicable",
+          "scale_policy": "not-to-scale",
+          "projection": "orthographic schematic"
+        },
+        "canvas": {
+          "width": 1200,
+          "height": 800,
+          "print_width_mm": 180,
+          "background": "#FFFFFF",
+          "text_colour": "#354753",
+          "minimum_label_pt": 7
+        },
+        "layout": "membrane-signalling",
+        "sources": [
+          {
+            "id": "openstax-signalling",
+            "title": "OpenStax Biology 2e, Signalling Molecules and Receptors",
+            "url": "https://openstax.org/books/biology-2e/pages/9-1-signaling-molecules-and-cellular-receptors",
+            "kind": "reference"
+          }
+        ],
+        "claims": [
+          {
+            "id": "association",
+            "text": "A ligand associates with the receptor in this explanatory example.",
+            "status": "illustrative",
+            "sources": []
+          },
+          {
+            "id": "activation",
+            "text": "A receptor-associated signal activates an effector in this invented example.",
+            "status": "illustrative",
+            "sources": []
+          },
+          {
+            "id": "inhibition",
+            "text": "A regulator inhibits the effector in this invented example.",
+            "status": "illustrative",
+            "sources": []
+          }
+        ],
+        "compartments": [
+          {
+            "id": "extracellular",
+            "label": "EXTRACELLULAR",
+            "box": [
+              50,
+              143,
+              1100,
+              196
+            ],
+            "fill": "#F8F7F2",
+            "boundary": "none",
+            "kind": "extracellular"
+          },
+          {
+            "id": "intracellular",
+            "label": "INTRACELLULAR",
+            "box": [
+              50,
+              365,
+              1100,
+              320
+            ],
+            "fill": "#F0F5F4",
+            "boundary": "none",
+            "kind": "intracellular"
+          }
+        ],
+        "nodes": [
+          {
+            "id": "bilayer0",
+            "asset": "lipid-bilayer",
+            "box": [
+              50,
+              310,
+              204,
+              80
+            ]
+          },
+          {
+            "id": "bilayer1",
+            "asset": "lipid-bilayer",
+            "box": [
+              233,
+              310,
+              204,
+              80
+            ]
+          },
+          {
+            "id": "bilayer2",
+            "asset": "lipid-bilayer",
+            "box": [
+              416,
+              310,
+              204,
+              80
+            ]
+          },
+          {
+            "id": "bilayer3",
+            "asset": "lipid-bilayer",
+            "box": [
+              599,
+              310,
+              204,
+              80
+            ]
+          },
+          {
+            "id": "bilayer4",
+            "asset": "lipid-bilayer",
+            "box": [
+              782,
+              310,
+              204,
+              80
+            ]
+          },
+          {
+            "id": "bilayer5",
+            "asset": "lipid-bilayer",
+            "box": [
+              965,
+              310,
+              204,
+              80
+            ]
+          },
+          {
+            "id": "ligand",
+            "asset": "ligand",
+            "box": [
+              381,
+              163,
+              91,
+              98
+            ]
+          },
+          {
+            "id": "receptor",
+            "asset": "receptor-single",
+            "box": [
+              433,
+              267,
+              140,
+              193
+            ],
+            "compartment": "intracellular",
+            "placement": "boundary"
+          },
+          {
+            "id": "effector",
+            "asset": "kinase",
+            "box": [
+              742,
+              489,
+              151,
+              151
+            ],
+            "compartment": "intracellular"
+          },
+          {
+            "id": "regulator",
+            "asset": "phosphatase",
+            "box": [
+              992,
+              478,
+              112,
+              132
+            ],
+            "compartment": "intracellular"
+          }
+        ],
+        "edges": [
+          {
+            "id": "bind",
+            "source": {
+              "node": "ligand",
+              "landmark": "bottom"
+            },
+            "target": {
+              "node": "receptor",
+              "landmark": "binding-site"
+            },
+            "type": "association",
+            "claim": "association",
+            "via": [
+              [
+                426,
+                252
+              ],
+              [
+                504,
+                252
+              ]
+            ]
+          },
+          {
+            "id": "activate",
+            "source": {
+              "node": "receptor",
+              "landmark": "intracellular-domain"
+            },
+            "target": {
+              "node": "effector",
+              "landmark": "left"
+            },
+            "type": "activation",
+            "claim": "activation",
+            "via": [
+              [
+                503,
+                574
+              ],
+              [
+                704,
+                574
+              ]
+            ],
+            "label": "activates",
+            "label_position": [
+              553,
+              540
+            ]
+          },
+          {
+            "id": "inhibit",
+            "source": {
+              "node": "regulator",
+              "landmark": "left"
+            },
+            "target": {
+              "node": "effector",
+              "landmark": "right"
+            },
+            "type": "inhibition",
+            "claim": "inhibition",
+            "via": [
+              [
+                950,
+                554
+              ],
+              [
+                950,
+                562
+              ]
+            ]
+          }
+        ],
+        "labels": [
+          {
+            "id": "ligand",
+            "text": "Ligand",
+            "box": [
+              179,
+              206,
+              145,
+              32
+            ],
+            "target": {
+              "node": "ligand",
+              "landmark": "left"
+            }
+          },
+          {
+            "id": "receptor",
+            "text": "Receptor",
+            "box": [
+              213,
+              449,
+              162,
+              32
+            ],
+            "leader_via": [
+              [
+                408,
+                463
+              ]
+            ],
+            "target": {
+              "node": "receptor",
+              "landmark": "intracellular-domain"
+            }
+          },
+          {
+            "id": "effector",
+            "text": "Effector",
+            "box": [
+              756,
+              645,
+              145,
+              32
+            ]
+          },
+          {
+            "id": "inhibitor",
+            "text": "Regulator",
+            "box": [
+              979,
+              633,
+              145,
+              32
+            ]
+          },
+          {
+            "id": "membrane",
+            "text": "Lipid bilayer",
+            "box": [
+              692,
+              282,
+              190,
+              32
+            ],
+            "target": {
+              "node": "bilayer4",
+              "landmark": "outer-leaflet"
+            }
+          }
+        ],
+        "caption": "Illustrative mechanism only; not a named pathway or evidence of molecular binding. Dashed lines denote hypothetical relationships. Open arrow: activation. T-bar: inhibition. Plain line: association."
+      }
+    },
+    {
+      "id": "epithelial-barrier",
+      "kind": "scene",
+      "name": "The epithelial barrier",
+      "document": {
+        "schema_version": "1.0.0",
+        "id": "epithelial-barrier",
+        "title": "The epithelial barrier",
+        "subtitle": "A continuous tissue section, from the lumen to the supporting tissue",
+        "description": "An explanatory section of a polarised epithelial sheet. Its apical surface and microvilli are above the cell bodies; a goblet cell lies among columnar cells. Junctions lie between neighbouring cells, and a basement membrane separates the epithelial layer from the underlying connective tissue.",
+        "audience": "scientific",
+        "representation": "schematic",
+        "frame": {
+          "species": "human, conceptual unless specified",
+          "life_stage": "not specified",
+          "view": "schematic projection",
+          "laterality": "not-applicable",
+          "scale_policy": "not-to-scale",
+          "projection": "orthographic schematic"
+        },
+        "canvas": {
+          "width": 1200,
+          "height": 800,
+          "print_width_mm": 180,
+          "background": "#FFFFFF",
+          "text_colour": "#354753",
+          "minimum_label_pt": 7
+        },
+        "layout": "epithelial-section",
+        "sources": [
+          {
+            "id": "openstax-epithelium",
+            "title": "OpenStax A&P 2e, 4.2 Epithelial Tissue",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-2-epithelial-tissue",
+            "kind": "reference"
+          }
+        ],
+        "claims": [
+          {
+            "id": "structure",
+            "text": "An explanatory section of a polarised epithelial sheet. Its apical surface and microvilli are above the cell bodies; a goblet cell lies among columnar cells. Junctions lie between neighbouring cells, and a basement membrane separates the epithelial layer from the underlying connective tissue.",
+            "status": "established",
+            "sources": [
+              "openstax-epithelium"
+            ]
+          }
+        ],
+        "compartments": [],
+        "nodes": [
+          {
+            "id": "sheet",
+            "asset": "epithelial-sheet",
+            "box": [
+              135,
+              220,
+              930,
+              362
+            ]
+          }
+        ],
+        "edges": [],
+        "labels": [
+          {
+            "id": "lumen",
+            "text": "LUMEN",
+            "box": [
+              50,
+              152,
+              180,
+              32
+            ],
+            "role": "heading",
+            "font_size": 20
+          },
+          {
+            "id": "microvilli",
+            "text": "Microvilli",
+            "box": [
+              230,
+              154,
+              155,
+              30
+            ],
+            "leader_via": [
+              [
+                292,
+                220
+              ]
+            ],
+            "target": {
+              "node": "sheet",
+              "landmark": "microvilli"
+            }
+          },
+          {
+            "id": "junction",
+            "text": "Intercellular junction",
+            "box": [
+              435,
+              152,
+              260,
+              32
+            ],
+            "leader_via": [
+              [
+                428,
+                220
+              ]
+            ],
+            "target": {
+              "node": "sheet",
+              "landmark": "junction"
+            }
+          },
+          {
+            "id": "mucin",
+            "text": "Mucin granules",
+            "box": [
+              767,
+              152,
+              210,
+              32
+            ],
+            "leader_via": [
+              [
+                836,
+                202
+              ]
+            ],
+            "target": {
+              "node": "sheet",
+              "landmark": "mucin"
+            }
+          },
+          {
+            "id": "nucleus",
+            "text": "Nucleus",
+            "box": [
+              50,
+              586,
+              120,
+              30
+            ],
+            "leader_via": [
+              [
+                182,
+                562
+              ]
+            ],
+            "target": {
+              "node": "sheet",
+              "landmark": "nucleus"
+            }
+          },
+          {
+            "id": "basement",
+            "text": "Basement membrane",
+            "box": [
+              332,
+              597,
+              235,
+              32
+            ],
+            "leader_via": [
+              [
+                398,
+                570
+              ]
+            ],
+            "target": {
+              "node": "sheet",
+              "landmark": "basement-membrane"
+            }
+          },
+          {
+            "id": "goblet",
+            "text": "Goblet cell",
+            "box": [
+              792,
+              597,
+              140,
+              32
+            ],
+            "leader_via": [
+              [
+                766,
+                574
+              ],
+              [
+                766,
+                422
+              ]
+            ],
+            "target": {
+              "node": "sheet",
+              "landmark": "goblet-cell"
+            }
+          },
+          {
+            "id": "stroma",
+            "text": "CONNECTIVE TISSUE",
+            "box": [
+              50,
+              654,
+              260,
+              30
+            ],
+            "role": "heading",
+            "font_size": 18
+          }
+        ],
+        "caption": "Schematic; not to scale. Cell number and dimensions are illustrative. Anatomy reference: OpenStax, Anatomy and Physiology 2e, section 4.2."
+      }
+    },
+    {
+      "id": "multi-scale-tissue",
+      "kind": "scene",
+      "name": "One tissue, three explanatory scales",
+      "document": {
+        "schema_version": "1.0.0",
+        "id": "multi-scale-tissue",
+        "title": "One tissue, three explanatory scales",
+        "subtitle": "Zoom connectors indicate correspondence, not biological causation",
+        "description": "A tissue section, a columnar cell symbol and a membrane-junction detail are displayed at different illustrative scales. The first zoom begins in the epithelial sheet and selects a columnar cell. The second selects the upper lateral interface and shows a generic junction between membranes. No magnification value is claimed.",
+        "audience": "scientific",
+        "representation": "schematic",
+        "frame": {
+          "species": "human, conceptual unless specified",
+          "life_stage": "not specified",
+          "view": "schematic projection",
+          "laterality": "not-applicable",
+          "scale_policy": "not-to-scale",
+          "projection": "orthographic schematic"
+        },
+        "canvas": {
+          "width": 1200,
+          "height": 800,
+          "print_width_mm": 180,
+          "background": "#FFFFFF",
+          "text_colour": "#354753",
+          "minimum_label_pt": 7
+        },
+        "layout": "multiscale-zoom",
+        "sources": [
+          {
+            "id": "openstax-epithelium",
+            "title": "OpenStax A&P 2e, 4.2 Epithelial Tissue",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-2-epithelial-tissue",
+            "kind": "reference"
+          }
+        ],
+        "claims": [
+          {
+            "id": "structure",
+            "text": "A tissue section, a columnar cell symbol and a membrane-junction detail are displayed at different illustrative scales. The first zoom begins in the epithelial sheet and selects a columnar cell. The second selects the upper lateral interface and shows a generic junction between membranes. No magnification value is claimed.",
+            "status": "established",
+            "sources": [
+              "openstax-epithelium"
+            ]
+          }
+        ],
+        "compartments": [],
+        "nodes": [
+          {
+            "id": "tissue",
+            "asset": "epithelial-sheet",
+            "box": [
+              43,
+              300,
+              400,
+              156
+            ]
+          },
+          {
+            "id": "cell",
+            "asset": "enterocyte",
+            "box": [
+              502,
+              251,
+              215,
+              322
+            ]
+          },
+          {
+            "id": "junction",
+            "asset": "tight-junction",
+            "box": [
+              837,
+              286,
+              223,
+              231
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "id": "zoom-cell",
+            "source": {
+              "node": "tissue",
+              "landmark": "enterocyte"
+            },
+            "target": {
+              "node": "cell",
+              "landmark": "left"
+            },
+            "type": "zoom",
+            "via": [
+              [
+                430,
+                259
+              ],
+              [
+                490,
+                259
+              ]
+            ]
+          },
+          {
+            "id": "zoom-junction",
+            "source": {
+              "node": "cell",
+              "landmark": "right"
+            },
+            "target": {
+              "node": "junction",
+              "landmark": "left"
+            },
+            "type": "zoom",
+            "via": [
+              [
+                785,
+                412
+              ]
+            ]
+          }
+        ],
+        "labels": [
+          {
+            "id": "tissue-label",
+            "text": "TISSUE",
+            "box": [
+              60,
+              180,
+              241,
+              32
+            ],
+            "role": "heading",
+            "font_size": 20
+          },
+          {
+            "id": "cell-label",
+            "text": "CELL",
+            "box": [
+              501,
+              180,
+              204,
+              32
+            ],
+            "role": "heading",
+            "font_size": 20
+          },
+          {
+            "id": "detail-label",
+            "text": "MEMBRANE INTERFACE",
+            "box": [
+              828,
+              180,
+              320,
+              32
+            ],
+            "role": "heading",
+            "font_size": 20
+          },
+          {
+            "id": "tissue-note",
+            "text": "The cell within a continuous epithelial sheet",
+            "box": [
+              62,
+              580,
+              335,
+              63
+            ]
+          },
+          {
+            "id": "cell-note",
+            "text": "Cell polarity is retained",
+            "box": [
+              497,
+              608,
+              290,
+              32
+            ]
+          },
+          {
+            "id": "detail-note",
+            "text": "Neighbouring membranes with a junctional symbol",
+            "box": [
+              838,
+              580,
+              301,
+              63
+            ]
+          }
+        ],
+        "caption": "Schematic at unequal, uncalibrated scales. Dashed connectors mean a change of scale, not transport or causation. Junction detail is symbolic, not a molecular reconstruction."
+      }
+    },
+    {
+      "id": "paired-epithelium",
+      "kind": "scene",
+      "name": "A matched view preserves the comparison",
+      "document": {
+        "schema_version": "1.0.0",
+        "id": "paired-epithelium",
+        "title": "A matched view preserves the comparison",
+        "subtitle": "The same tissue geometry, shown at the same scale, supports two reading tasks",
+        "description": "Two identical epithelial sections are displayed at a shared scale. The left annotation identifies cellular organisation; the right identifies the basal interface. Only the annotation changes. The figure does not depict disease, treatment, before-and-after improvement or measured clinical data.",
+        "audience": "scientific",
+        "representation": "schematic",
+        "frame": {
+          "species": "human, conceptual unless specified",
+          "life_stage": "not specified",
+          "view": "schematic projection",
+          "laterality": "not-applicable",
+          "scale_policy": "not-to-scale",
+          "projection": "orthographic schematic"
+        },
+        "canvas": {
+          "width": 1200,
+          "height": 800,
+          "print_width_mm": 180,
+          "background": "#FFFFFF",
+          "text_colour": "#354753",
+          "minimum_label_pt": 7
+        },
+        "layout": "paired-state",
+        "sources": [
+          {
+            "id": "openstax-epithelium",
+            "title": "OpenStax A&P 2e, 4.2 Epithelial Tissue",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-2-epithelial-tissue",
+            "kind": "reference"
+          }
+        ],
+        "claims": [
+          {
+            "id": "structure",
+            "text": "Two identical epithelial sections are displayed at a shared scale. The left annotation identifies cellular organisation; the right identifies the basal interface. Only the annotation changes. The figure does not depict disease, treatment, before-and-after improvement or measured clinical data.",
+            "status": "established",
+            "sources": [
+              "openstax-epithelium"
+            ]
+          }
+        ],
+        "compartments": [],
+        "nodes": [
+          {
+            "id": "left-tissue",
+            "asset": "epithelial-sheet",
+            "box": [
+              68,
+              283,
+              496,
+              193
+            ]
+          },
+          {
+            "id": "right-tissue",
+            "asset": "epithelial-sheet",
+            "box": [
+              634,
+              283,
+              496,
+              193
+            ]
+          }
+        ],
+        "edges": [],
+        "labels": [
+          {
+            "id": "A",
+            "text": "A  Cellular organisation",
+            "box": [
+              68,
+              165,
+              462,
+              42
+            ],
+            "font_size": 24,
+            "role": "heading"
+          },
+          {
+            "id": "B",
+            "text": "B  Basal interface",
+            "box": [
+              634,
+              165,
+              462,
+              42
+            ],
+            "font_size": 24,
+            "role": "heading"
+          },
+          {
+            "id": "goblet",
+            "text": "Goblet cell",
+            "box": [
+              173,
+              539,
+              180,
+              32
+            ],
+            "leader_via": [
+              [
+                346,
+                512
+              ],
+              [
+                346,
+                407
+              ]
+            ],
+            "target": {
+              "node": "left-tissue",
+              "landmark": "goblet-cell"
+            }
+          },
+          {
+            "id": "basement",
+            "text": "Basement membrane",
+            "box": [
+              779,
+              539,
+              281,
+              32
+            ],
+            "leader_via": [
+              [
+                876,
+                509
+              ]
+            ],
+            "target": {
+              "node": "right-tissue",
+              "landmark": "basement-membrane"
+            }
+          },
+          {
+            "id": "shared",
+            "text": "Identical geometry and scale",
+            "box": [
+              402,
+              649,
+              420,
+              32
+            ],
+            "align": "centre",
+            "role": "heading"
+          }
+        ],
+        "caption": "Matched explanatory views; not patient observations. Geometry, orientation and magnification are fixed. Only the selected label changes; no disease or treatment effect is implied."
+      }
+    },
+    {
+      "id": "renal-nephron",
+      "kind": "scene",
+      "name": "Continuity of the nephron",
+      "document": {
+        "schema_version": "1.0.0",
+        "id": "renal-nephron",
+        "title": "Continuity of the nephron",
+        "subtitle": "The tubular route is unfolded to make its connections legible",
+        "description": "A simplified nephron map shows a renal corpuscle leading to a proximal tubule, a descending limb, the nephron loop, an ascending limb and a distal tubule. The distal route drains into an associated collecting duct. Cortex and medulla are indicated; vascular branches are omitted.",
+        "audience": "scientific",
+        "representation": "schematic",
+        "frame": {
+          "species": "human, conceptual unless specified",
+          "life_stage": "not specified",
+          "view": "schematic projection",
+          "laterality": "not-applicable",
+          "scale_policy": "not-to-scale",
+          "projection": "orthographic schematic"
+        },
+        "canvas": {
+          "width": 1200,
+          "height": 800,
+          "print_width_mm": 180,
+          "background": "#FFFFFF",
+          "text_colour": "#354753",
+          "minimum_label_pt": 7
+        },
+        "layout": "unfolded-tubule",
+        "sources": [
+          {
+            "id": "openstax-kidney",
+            "title": "OpenStax A&P 2e, Chapter 25 review / microscopic anatomy",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-chapter-review",
+            "kind": "reference"
+          }
+        ],
+        "claims": [
+          {
+            "id": "structure",
+            "text": "A simplified nephron map shows a renal corpuscle leading to a proximal tubule, a descending limb, the nephron loop, an ascending limb and a distal tubule. The distal route drains into an associated collecting duct. Cortex and medulla are indicated; vascular branches are omitted.",
+            "status": "established",
+            "sources": [
+              "openstax-kidney"
+            ]
+          }
+        ],
+        "compartments": [
+          {
+            "id": "cortex",
+            "label": "CORTEX",
+            "box": [
+              50,
+              146,
+              1100,
+              228
+            ],
+            "fill": "#F7F0E7",
+            "boundary": "none",
+            "kind": "region"
+          },
+          {
+            "id": "medulla",
+            "label": "MEDULLA",
+            "box": [
+              50,
+              374,
+              1100,
+              310
+            ],
+            "fill": "#F2F5F4",
+            "boundary": "none",
+            "kind": "region"
+          }
+        ],
+        "nodes": [
+          {
+            "id": "nephron",
+            "asset": "nephron",
+            "box": [
+              280,
+              169,
+              574,
+              518
+            ]
+          }
+        ],
+        "edges": [],
+        "labels": [
+          {
+            "id": "corpuscle",
+            "text": "Renal corpuscle",
+            "box": [
+              67,
+              241,
+              176,
+              55
+            ],
+            "target": {
+              "node": "nephron",
+              "landmark": "corpuscle"
+            }
+          },
+          {
+            "id": "proximal",
+            "text": "Proximal tubule",
+            "box": [
+              391,
+              152,
+              175,
+              30
+            ],
+            "target": {
+              "node": "nephron",
+              "landmark": "proximal-tubule"
+            }
+          },
+          {
+            "id": "distal",
+            "text": "Distal tubule",
+            "box": [
+              746,
+              152,
+              160,
+              30
+            ],
+            "target": {
+              "node": "nephron",
+              "landmark": "distal-tubule"
+            }
+          },
+          {
+            "id": "descending",
+            "text": "Descending limb",
+            "box": [
+              76,
+              475,
+              185,
+              55
+            ],
+            "leader_via": [
+              [
+                480,
+                502
+              ]
+            ],
+            "target": {
+              "node": "nephron",
+              "landmark": "descending-limb"
+            }
+          },
+          {
+            "id": "ascending",
+            "text": "Ascending limb",
+            "box": [
+              893,
+              469,
+              218,
+              32
+            ],
+            "leader_via": [
+              [
+                715,
+                484
+              ]
+            ],
+            "target": {
+              "node": "nephron",
+              "landmark": "ascending-limb"
+            }
+          },
+          {
+            "id": "collecting",
+            "text": "Collecting duct",
+            "box": [
+              893,
+              592,
+              218,
+              32
+            ],
+            "target": {
+              "node": "nephron",
+              "landmark": "collecting-duct"
+            }
+          },
+          {
+            "id": "loop",
+            "text": "Nephron loop",
+            "box": [
+              354,
+              649,
+              174,
+              30
+            ],
+            "target": {
+              "node": "nephron",
+              "landmark": "loop"
+            }
+          }
+        ],
+        "caption": "Unfolded schematic; not to scale. The collecting duct is associated drainage, not part of the nephron. Blood vessels and the filtration barrier are omitted."
+      }
+    },
+    {
+      "id": "study-workflow",
+      "kind": "scene",
+      "name": "From a specimen to an interpretable image",
+      "document": {
+        "schema_version": "1.0.0",
+        "id": "study-workflow",
+        "title": "From a specimen to an interpretable image",
+        "subtitle": "A descriptive workflow, without fabricated experimental results",
+        "description": "A conceptual research workflow progresses from a labelled sample vial to a prepared microscope slide, then to optical microscopy. The arrows indicate the order of activities, not a biological mechanism. No sample results, operating instructions, measurements or patient identifiers are shown.",
+        "audience": "scientific",
+        "representation": "schematic",
+        "frame": {
+          "species": "human, conceptual unless specified",
+          "life_stage": "not specified",
+          "view": "schematic projection",
+          "laterality": "not-applicable",
+          "scale_policy": "not-to-scale",
+          "projection": "orthographic schematic"
+        },
+        "canvas": {
+          "width": 1200,
+          "height": 800,
+          "print_width_mm": 180,
+          "background": "#FFFFFF",
+          "text_colour": "#354753",
+          "minimum_label_pt": 7
+        },
+        "layout": "study-workflow",
+        "sources": [
+          {
+            "id": "house-design",
+            "title": "Medical Illustration Studio original design rules",
+            "url": "urn:medical-illustration-studio:house-design:1",
+            "kind": "illustrative"
+          }
+        ],
+        "claims": [],
+        "compartments": [],
+        "nodes": [
+          {
+            "id": "sample",
+            "asset": "sample-vial",
+            "box": [
+              145,
+              266,
+              180,
+              213
+            ]
+          },
+          {
+            "id": "slide",
+            "asset": "microscope-slide",
+            "box": [
+              488,
+              287,
+              225,
+              173
+            ]
+          },
+          {
+            "id": "scope",
+            "asset": "microscope",
+            "box": [
+              876,
+              246,
+              196,
+              241
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "id": "prepare",
+            "source": {
+              "node": "sample",
+              "landmark": "right"
+            },
+            "target": {
+              "node": "slide",
+              "landmark": "left"
+            },
+            "type": "sequence",
+            "via": [
+              [
+                409,
+                373
+              ]
+            ],
+            "label": "prepare",
+            "label_position": [
+              349,
+              313
+            ]
+          },
+          {
+            "id": "observe",
+            "source": {
+              "node": "slide",
+              "landmark": "right"
+            },
+            "target": {
+              "node": "scope",
+              "landmark": "left"
+            },
+            "type": "sequence",
+            "via": [
+              [
+                791,
+                373
+              ]
+            ],
+            "label": "observe",
+            "label_position": [
+              744,
+              313
+            ]
+          }
+        ],
+        "labels": [
+          {
+            "id": "sample-label",
+            "text": "1  Specimen",
+            "box": [
+              128,
+              183,
+              251,
+              42
+            ],
+            "font_size": 24,
+            "role": "heading"
+          },
+          {
+            "id": "slide-label",
+            "text": "2  Prepared slide",
+            "box": [
+              470,
+              183,
+              315,
+              42
+            ],
+            "font_size": 24,
+            "role": "heading"
+          },
+          {
+            "id": "scope-label",
+            "text": "3  Microscopy",
+            "box": [
+              866,
+              183,
+              272,
+              42
+            ],
+            "font_size": 24,
+            "role": "heading"
+          },
+          {
+            "id": "sample-note",
+            "text": "A defined material and an explicit identity",
+            "box": [
+              114,
+              545,
+              268,
+              70
+            ],
+            "font_size": 18
+          },
+          {
+            "id": "slide-note",
+            "text": "Preparation is described in the study methods",
+            "box": [
+              477,
+              545,
+              281,
+              70
+            ],
+            "font_size": 18
+          },
+          {
+            "id": "scope-note",
+            "text": "Observed data remain separate from illustration",
+            "box": [
+              863,
+              545,
+              278,
+              72
+            ],
+            "font_size": 18
+          }
+        ],
+        "caption": "Conceptual workflow; not an operating protocol. Sequence arrows indicate stages of work, not causal biological effects. No microscopy result or sample measurement is fabricated."
+      }
+    },
+    {
+      "id": "vascular-wall",
+      "kind": "scene",
+      "name": "A muscular artery in section",
+      "document": {
+        "schema_version": "1.0.0",
+        "id": "vascular-wall",
+        "title": "A muscular artery in section",
+        "subtitle": "The wall is organised into layers around a continuous lumen",
+        "description": "A transverse explanatory view of a generic muscular artery. Labels identify the lumen, the tunica intima, the tunica media and the tunica externa or adventitia. The repeated elongated marks in the media symbolise circumferential smooth muscle, not measured cell counts.",
+        "audience": "scientific",
+        "representation": "schematic",
+        "frame": {
+          "species": "human, conceptual unless specified",
+          "life_stage": "not specified",
+          "view": "schematic projection",
+          "laterality": "not-applicable",
+          "scale_policy": "not-to-scale",
+          "projection": "orthographic schematic"
+        },
+        "canvas": {
+          "width": 1200,
+          "height": 800,
+          "print_width_mm": 180,
+          "background": "#FFFFFF",
+          "text_colour": "#354753",
+          "minimum_label_pt": 7
+        },
+        "layout": "vascular-cross-section",
+        "sources": [
+          {
+            "id": "openstax-vessels",
+            "title": "OpenStax A&P 2e, 20.1 Blood Vessel Structure",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-1-structure-and-function-of-blood-vessels",
+            "kind": "reference"
+          }
+        ],
+        "claims": [
+          {
+            "id": "structure",
+            "text": "A transverse explanatory view of a generic muscular artery. Labels identify the lumen, the tunica intima, the tunica media and the tunica externa or adventitia. The repeated elongated marks in the media symbolise circumferential smooth muscle, not measured cell counts.",
+            "status": "established",
+            "sources": [
+              "openstax-vessels"
+            ]
+          }
+        ],
+        "compartments": [],
+        "nodes": [
+          {
+            "id": "artery",
+            "asset": "artery-section",
+            "box": [
+              198,
+              154,
+              603,
+              516
+            ]
+          }
+        ],
+        "edges": [],
+        "labels": [
+          {
+            "id": "lumen",
+            "text": "Lumen",
+            "box": [
+              63,
+              211,
+              100,
+              30
+            ],
+            "leader_via": [
+              [
+                178,
+                256
+              ],
+              [
+                360,
+                333
+              ]
+            ],
+            "target": {
+              "node": "artery",
+              "landmark": "lumen"
+            }
+          },
+          {
+            "id": "intima",
+            "text": "Tunica intima",
+            "box": [
+              890,
+              237,
+              220,
+              32
+            ],
+            "leader_via": [
+              [
+                845,
+                262
+              ],
+              [
+                742,
+                367
+              ]
+            ],
+            "target": {
+              "node": "artery",
+              "landmark": "intima"
+            }
+          },
+          {
+            "id": "media",
+            "text": "Tunica media",
+            "box": [
+              890,
+              380,
+              220,
+              32
+            ],
+            "target": {
+              "node": "artery",
+              "landmark": "media"
+            }
+          },
+          {
+            "id": "adventitia",
+            "text": "Tunica externa",
+            "box": [
+              890,
+              539,
+              250,
+              32
+            ],
+            "leader_via": [
+              [
+                857,
+                519
+              ]
+            ],
+            "target": {
+              "node": "artery",
+              "landmark": "adventitia"
+            }
+          },
+          {
+            "id": "view",
+            "text": "TRANSVERSE VIEW",
+            "box": [
+              67,
+              641,
+              250,
+              30
+            ],
+            "font_size": 18,
+            "role": "heading"
+          }
+        ],
+        "caption": "Schematic; not to scale. Layer widths are explanatory, not measured. The outer layer is the tunica externa (adventitia). Reference: OpenStax, A&P 2e, section 20.1."
+      }
+    }
+  ]
+}

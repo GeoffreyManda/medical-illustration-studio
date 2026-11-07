@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0.0",
+  "id": "multi-scale-tissue",
+  "title": "One tissue, three explanatory scales",
+  "subtitle": "Zoom connectors indicate correspondence, not biological causation",
+  "description": "A tissue section, a columnar cell symbol and a membrane-junction detail are displayed at different illustrative scales. The first zoom begins in the epithelial sheet and selects a columnar cell. The second selects the upper lateral interface and shows a generic junction between membranes. No magnification value is claimed.",
+  "audience": "scientific",
+  "representation": "schematic",
+  "frame": {
+    "species": "human, conceptual unless specified",
+    "life_stage": "not specified",
+    "view": "schematic projection",
+    "laterality": "not-applicable",
+    "scale_policy": "not-to-scale",
+    "projection": "orthographic schematic"
+  },
+  "canvas": {
+    "width": 1200,
+    "height": 800,
+    "print_width_mm": 180,
+    "background": "#FFFFFF",
+    "text_colour": "#354753",
+    "minimum_label_pt": 7
+  },
+  "layout": "multiscale-zoom",
+  "sources": [
+    {
+      "id": "openstax-epithelium",
+      "title": "OpenStax A&P 2e, 4.2 Epithelial Tissue",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-2-epithelial-tissue",
+      "kind": "reference"
+    }
+  ],
+  "claims": [
+    {
+      "id": "structure",
+      "text": "A tissue section, a columnar cell symbol and a membrane-junction detail are displayed at different illustrative scales. The first zoom begins in the epithelial sheet and selects a columnar cell. The second selects the upper lateral interface and shows a generic junction between membranes. No magnification value is claimed.",
+      "status": "established",
+      "sources": [
+        "openstax-epithelium"
+      ]
+    }
+  ],
+  "compartments": [],
+  "nodes": [
+    {
+      "id": "tissue",
+      "asset": "epithelial-sheet",
+      "box": [
+        43,
+        300,
+        400,
+        156
+      ]
+    },
+    {
+      "id": "cell",
+      "asset": "enterocyte",
+      "box": [
+        502,
+        251,
+        215,
+        322
+      ]
+    },
+    {
+      "id": "junction",
+      "asset": "tight-junction",
+      "box": [
+        837,
+        286,
+        223,
+        231
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "zoom-cell",
+      "source": {
+        "node": "tissue",
+        "landmark": "enterocyte"
+      },
+      "target": {
+        "node": "cell",
+        "landmark": "left"
+      },
+      "type": "zoom",
+      "via": [
+        [
+          430,
+          259
+        ],
+        [
+          490,
+          259
+        ]
+      ]
+    },
+    {
+      "id": "zoom-junction",
+      "source": {
+        "node": "cell",
+        "landmark": "right"
+      },
+      "target": {
+        "node": "junction",
+        "landmark": "left"
+      },
+      "type": "zoom",
+      "via": [
+        [
+          785,
+          412
+        ]
+      ]
+    }
+  ],
+  "labels": [
+    {
+      "id": "tissue-label",
+      "text": "TISSUE",
+      "box": [
+        60,
+        180,
+        241,
+        32
+      ],
+      "role": "heading",
+      "font_size": 20
+    },
+    {
+      "id": "cell-label",
+      "text": "CELL",
+      "box": [
+        501,
+        180,
+        204,
+        32
+      ],
+      "role": "heading",
+      "font_size": 20
+    },
+    {
+      "id": "detail-label",
+      "text": "MEMBRANE INTERFACE",
+      "box": [
+        828,
+        180,
+        320,
+        32
+      ],
+      "role": "heading",
+      "font_size": 20
+    },
+    {
+      "id": "tissue-note",
+      "text": "The cell within a continuous epithelial sheet",
+      "box": [
+        62,
+        580,
+        335,
+        63
+      ]
+    },
+    {
+      "id": "cell-note",
+      "text": "Cell polarity is retained",
+      "box": [
+        497,
+        608,
+        284,
+        32
+      ]
+    },
+    {
+      "id": "detail-note",
+      "text": "Neighbouring membranes with a junctional symbol",
+      "box": [
+        838,
+        580,
+        301,
+        63
+      ]
+    }
+  ],
+  "caption": "Schematic at unequal, uncalibrated scales. Dashed connectors mean a change of scale, not transport or causation. Junction detail is symbolic, not a molecular reconstruction."
+}

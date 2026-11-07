@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0.0",
+  "id": "renal-nephron",
+  "title": "Continuity of the nephron",
+  "subtitle": "The tubular route is unfolded to make its connections legible",
+  "description": "A simplified nephron map shows a renal corpuscle leading to a proximal tubule, a descending limb, the nephron loop, an ascending limb and a distal tubule. The distal route drains into an associated collecting duct. Cortex and medulla are indicated; vascular branches are omitted.",
+  "audience": "scientific",
+  "representation": "schematic",
+  "frame": {
+    "species": "human, conceptual unless specified",
+    "life_stage": "not specified",
+    "view": "schematic projection",
+    "laterality": "not-applicable",
+    "scale_policy": "not-to-scale",
+    "projection": "orthographic schematic"
+  },
+  "canvas": {
+    "width": 1200,
+    "height": 800,
+    "print_width_mm": 180,
+    "background": "#FFFFFF",
+    "text_colour": "#354753",
+    "minimum_label_pt": 7
+  },
+  "layout": "unfolded-tubule",
+  "sources": [
+    {
+      "id": "openstax-kidney",
+      "title": "OpenStax A&P 2e, Chapter 25 review / microscopic anatomy",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-chapter-review",
+      "kind": "reference"
+    }
+  ],
+  "claims": [
+    {
+      "id": "structure",
+      "text": "A simplified nephron map shows a renal corpuscle leading to a proximal tubule, a descending limb, the nephron loop, an ascending limb and a distal tubule. The distal route drains into an associated collecting duct. Cortex and medulla are indicated; vascular branches are omitted.",
+      "status": "established",
+      "sources": [
+        "openstax-kidney"
+      ]
+    }
+  ],
+  "compartments": [
+    {
+      "id": "cortex",
+      "label": "CORTEX",
+      "box": [
+        50,
+        146,
+        1100,
+        228
+      ],
+      "fill": "#F7F0E7",
+      "boundary": "none",
+      "kind": "region"
+    },
+    {
+      "id": "medulla",
+      "label": "MEDULLA",
+      "box": [
+        50,
+        374,
+        1100,
+        310
+      ],
+      "fill": "#F2F5F4",
+      "boundary": "none",
+      "kind": "region"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "nephron",
+      "asset": "nephron",
+      "box": [
+        280,
+        169,
+        574,
+        518
+      ]
+    }
+  ],
+  "edges": [],
+  "labels": [
+    {
+      "id": "corpuscle",
+      "text": "Renal corpuscle",
+      "box": [
+        67,
+        241,
+        176,
+        55
+      ],
+      "target": {
+        "node": "nephron",
+        "landmark": "corpuscle"
+      }
+    },
+    {
+      "id": "proximal",
+      "text": "Proximal tubule",
+      "box": [
+        391,
+        152,
+        170,
+        30
+      ],
+      "target": {
+        "node": "nephron",
+        "landmark": "proximal-tubule"
+      }
+    },
+    {
+      "id": "distal",
+      "text": "Distal tubule",
+      "box": [
+        746,
+        152,
+        160,
+        30
+      ],
+      "target": {
+        "node": "nephron",
+        "landmark": "distal-tubule"
+      }
+    },
+    {
+      "id": "descending",
+      "text": "Descending limb",
+      "box": [
+        76,
+        475,
+        185,
+        55
+      ],
+      "leader_via": [
+        [
+          480,
+          502
+        ]
+      ],
+      "target": {
+        "node": "nephron",
+        "landmark": "descending-limb"
+      }
+    },
+    {
+      "id": "ascending",
+      "text": "Ascending limb",
+      "box": [
+        893,
+        469,
+        218,
+        32
+      ],
+      "leader_via": [
+        [
+          715,
+          484
+        ]
+      ],
+      "target": {
+        "node": "nephron",
+        "landmark": "ascending-limb"
+      }
+    },
+    {
+      "id": "collecting",
+      "text": "Collecting duct",
+      "box": [
+        893,
+        592,
+        218,
+        32
+      ],
+      "target": {
+        "node": "nephron",
+        "landmark": "collecting-duct"
+      }
+    },
+    {
+      "id": "loop",
+      "text": "Nephron loop",
+      "box": [
+        354,
+        649,
+        174,
+        30
+      ],
+      "target": {
+        "node": "nephron",
+        "landmark": "loop"
+      }
+    }
+  ],
+  "caption": "Unfolded schematic; not to scale. The collecting duct is associated drainage, not part of the nephron. Blood vessels and the filtration barrier are omitted."
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0.0",
+  "id": "atlas-kidney-surface",
+  "title": "Kidney",
+  "subtitle": "External surface and structures at the hilum",
+  "description": "An idealised adult kidney has a convex lateral border, a concave medial hilum, a smooth capsular surface, renal artery, renal vein and ureter.",
+  "asset": "atlas-kidney-surface",
+  "width": 1000,
+  "height": 1190,
+  "print_width_mm": 190,
+  "label_size": 17,
+  "label_bank_width": 174,
+  "art_box": [
+    204,
+    142,
+    610,
+    889
+  ],
+  "anatomy": {
+    "species": "Homo sapiens",
+    "life_stage": "adult, idealised",
+    "view": "external illustrative view",
+    "laterality": "unspecified"
+  },
+  "labels": [
+    {
+      "landmark": "upper-pole",
+      "text": "Superior pole",
+      "side": "left"
+    },
+    {
+      "landmark": "lateral-border",
+      "text": "Lateral border",
+      "side": "left"
+    },
+    {
+      "landmark": "anterior-surface",
+      "text": "Capsular surface",
+      "side": "left"
+    },
+    {
+      "landmark": "lower-pole",
+      "text": "Inferior pole",
+      "side": "left"
+    },
+    {
+      "landmark": "artery",
+      "text": "Renal artery",
+      "side": "right"
+    },
+    {
+      "landmark": "vein",
+      "text": "Renal vein",
+      "side": "right"
+    },
+    {
+      "landmark": "hilum",
+      "text": "Renal hilum",
+      "side": "right"
+    },
+    {
+      "landmark": "ureter",
+      "text": "Ureter",
+      "side": "right"
+    }
+  ],
+  "caption": "External illustrative view. Hilar structures have been separated for clarity. No sided anatomical variation is implied; not to scale.",
+  "reference_line": "Anatomical reference: OpenStax, Anatomy and Physiology 2e, section 25.3.",
+  "intended_use": "educational-draft"
+}

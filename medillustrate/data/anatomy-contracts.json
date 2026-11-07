@@ -1,0 +1,70 @@
+{
+  "version": "2.1.0",
+  "status": "Source-linked assertions; their presence is not a geometric or medical certification.",
+  "contracts": {
+    "atlas-kidney-section": {
+      "source_ids": [
+        "openstax-kidney-gross"
+      ],
+      "invariants": [
+        "Cortex surrounds the medullary pyramids and extends between them as renal columns.",
+        "Papillary tips project into the minor calyces.",
+        "Minor calyces join major calyces, which communicate with the renal pelvis and ureter.",
+        "The hilar artery and vein remain distinct from the collecting system.",
+        "A coronal illustrative section is not an imaging-derived slice; laterality remains unspecified."
+      ],
+      "must_not_infer": [
+        "Patient-specific numbers of pyramids or calyces",
+        "Microscopic glomeruli visible at gross anatomical scale",
+        "That vessel branching omitted from this plate is absent in the body"
+      ]
+    },
+    "atlas-kidney-surface": {
+      "source_ids": [
+        "openstax-kidney-gross"
+      ],
+      "invariants": [
+        "The medial concavity contains the hilum.",
+        "The external view does not expose renal pyramids or calyces.",
+        "The ureter leaves the collecting system, not the renal artery."
+      ],
+      "must_not_infer": [
+        "Laterality from an unlabelled mirrored silhouette",
+        "Internal structures from surface paint",
+        "Exact hilar depth order from a flattened isolated illustration"
+      ]
+    },
+    "atlas-arterial-wall": {
+      "source_ids": [
+        "openstax-vessels"
+      ],
+      "invariants": [
+        "The lumen is bounded by the intimal region.",
+        "Media is outside intima; adventitia is outside media.",
+        "The internal elastic lamina lies at the intima-media boundary.",
+        "This drawing is a muscular artery, not every class of blood vessel."
+      ],
+      "must_not_infer": [
+        "Measured wall thickness",
+        "A disease diagnosis",
+        "That a lumen highlight denotes an additional tissue layer"
+      ]
+    },
+    "atlas-peripheral-nerve": {
+      "source_ids": [
+        "openstax-peripheral-nerves"
+      ],
+      "invariants": [
+        "Epineurium surrounds the nerve trunk and occupies the spaces between fascicles.",
+        "Perineurium encloses each fascicle.",
+        "Endoneurial connective tissue surrounds individual fibres within fascicles.",
+        "The view combines a cut face and a longitudinal surface and is explicitly illustrative."
+      ],
+      "must_not_infer": [
+        "Actual fibre counts or fascicle arrangement",
+        "That every peripheral nerve fibre is myelinated",
+        "That repeated dots are measured histology"
+      ]
+    }
+  }
+}

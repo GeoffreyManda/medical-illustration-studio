@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "id": "vascular-wall",
+  "title": "A muscular artery in section",
+  "subtitle": "The wall is organised into layers around a continuous lumen",
+  "description": "A transverse explanatory view of a generic muscular artery. Labels identify the lumen, the tunica intima, the tunica media and the tunica externa or adventitia. The repeated elongated marks in the media symbolise circumferential smooth muscle, not measured cell counts.",
+  "audience": "scientific",
+  "representation": "schematic",
+  "frame": {
+    "species": "human, conceptual unless specified",
+    "life_stage": "not specified",
+    "view": "schematic projection",
+    "laterality": "not-applicable",
+    "scale_policy": "not-to-scale",
+    "projection": "orthographic schematic"
+  },
+  "canvas": {
+    "width": 1200,
+    "height": 800,
+    "print_width_mm": 180,
+    "background": "#FFFFFF",
+    "text_colour": "#354753",
+    "minimum_label_pt": 7
+  },
+  "layout": "vascular-cross-section",
+  "sources": [
+    {
+      "id": "openstax-vessels",
+      "title": "OpenStax A&P 2e, 20.1 Blood Vessel Structure",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-1-structure-and-function-of-blood-vessels",
+      "kind": "reference"
+    }
+  ],
+  "claims": [
+    {
+      "id": "structure",
+      "text": "A transverse explanatory view of a generic muscular artery. Labels identify the lumen, the tunica intima, the tunica media and the tunica externa or adventitia. The repeated elongated marks in the media symbolise circumferential smooth muscle, not measured cell counts.",
+      "status": "established",
+      "sources": [
+        "openstax-vessels"
+      ]
+    }
+  ],
+  "compartments": [],
+  "nodes": [
+    {
+      "id": "artery",
+      "asset": "artery-section",
+      "box": [
+        198,
+        154,
+        603,
+        516
+      ]
+    }
+  ],
+  "edges": [],
+  "labels": [
+    {
+      "id": "lumen",
+      "text": "Lumen",
+      "box": [
+        63,
+        211,
+        100,
+        30
+      ],
+      "leader_via": [
+        [
+          178,
+          256
+        ],
+        [
+          360,
+          333
+        ]
+      ],
+      "target": {
+        "node": "artery",
+        "landmark": "lumen"
+      }
+    },
+    {
+      "id": "intima",
+      "text": "Tunica intima",
+      "box": [
+        890,
+        237,
+        220,
+        32
+      ],
+      "leader_via": [
+        [
+          845,
+          262
+        ],
+        [
+          742,
+          367
+        ]
+      ],
+      "target": {
+        "node": "artery",
+        "landmark": "intima"
+      }
+    },
+    {
+      "id": "media",
+      "text": "Tunica media",
+      "box": [
+        890,
+        380,
+        220,
+        32
+      ],
+      "target": {
+        "node": "artery",
+        "landmark": "media"
+      }
+    },
+    {
+      "id": "adventitia",
+      "text": "Tunica externa",
+      "box": [
+        890,
+        539,
+        250,
+        32
+      ],
+      "leader_via": [
+        [
+          857,
+          519
+        ]
+      ],
+      "target": {
+        "node": "artery",
+        "landmark": "adventitia"
+      }
+    },
+    {
+      "id": "view",
+      "text": "TRANSVERSE VIEW",
+      "box": [
+        67,
+        641,
+        250,
+        30
+      ],
+      "font_size": 18,
+      "role": "heading"
+    }
+  ],
+  "caption": "Schematic; not to scale. Layer widths are explanatory, not measured. The outer layer is the tunica externa (adventitia). Reference: OpenStax, A&P 2e, section 20.1."
+}

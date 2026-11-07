@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0.0",
+  "id": "atlas-peripheral-nerve",
+  "title": "Peripheral nerve",
+  "subtitle": "Oblique section showing fascicles and their envelopes",
+  "description": "An idealised peripheral nerve in oblique section contains several fascicles within the epineurium. Each fascicle is bounded by perineurium and contains illustrated myelinated fibres and endoneurial supporting tissue.",
+  "asset": "atlas-peripheral-nerve",
+  "width": 1000,
+  "height": 1190,
+  "print_width_mm": 190,
+  "label_size": 17,
+  "label_bank_width": 174,
+  "art_box": [
+    164,
+    175,
+    687,
+    782
+  ],
+  "anatomy": {
+    "species": "Homo sapiens",
+    "life_stage": "adult, idealised",
+    "view": "oblique illustrative section",
+    "laterality": "not-applicable"
+  },
+  "labels": [
+    {
+      "landmark": "longitudinal-bundles",
+      "text": "Longitudinal nerve trunk",
+      "side": "left"
+    },
+    {
+      "landmark": "myelinated-fibres",
+      "text": "Myelinated fibres",
+      "side": "left"
+    },
+    {
+      "landmark": "fascicle",
+      "text": "Nerve fascicle",
+      "side": "left"
+    },
+    {
+      "landmark": "endoneurium",
+      "text": "Endoneurial tissue",
+      "side": "right"
+    },
+    {
+      "landmark": "vasa-nervorum",
+      "text": "Small epineurial vessel",
+      "side": "right"
+    },
+    {
+      "landmark": "perineurium",
+      "text": "Perineurium",
+      "side": "right"
+    },
+    {
+      "landmark": "epineurium",
+      "text": "Epineurium",
+      "side": "right"
+    }
+  ],
+  "caption": "Illustrative nerve section. Fascicle and fibre counts are arbitrary; unmyelinated fibres are omitted. Not a quantitative histological section.",
+  "reference_line": "Anatomical reference: OpenStax, Anatomy and Physiology 2e, section 13.4.",
+  "intended_use": "educational-draft"
+}

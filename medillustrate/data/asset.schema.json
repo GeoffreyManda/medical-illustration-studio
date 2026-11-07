@@ -1,0 +1,170 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_.-]{0,79}$"
+    },
+    "label": {
+      "type": "string",
+      "maxLength": 10000
+    },
+    "category": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_.-]{0,79}$"
+    },
+    "svg": {
+      "type": "string",
+      "maxLength": 1000000
+    },
+    "view_box": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "landmarks": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "required": [
+        "centre",
+        "top",
+        "bottom",
+        "left",
+        "right"
+      ]
+    },
+    "scale_class": {
+      "enum": [
+        "molecular",
+        "organelle",
+        "cell",
+        "tissue",
+        "organ",
+        "body",
+        "equipment"
+      ]
+    },
+    "representation": {
+      "enum": [
+        "schematic",
+        "anatomical"
+      ]
+    },
+    "view": {
+      "type": "string",
+      "maxLength": 10000
+    },
+    "mirror_safe": {
+      "type": "boolean"
+    },
+    "license": {
+      "type": "string",
+      "maxLength": 10000
+    },
+    "creator": {
+      "type": "string",
+      "maxLength": 10000
+    },
+    "reference_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 10000
+      },
+      "maxItems": 50
+    },
+    "source_url": {
+      "type": "string",
+      "maxLength": 10000
+    },
+    "review_status": {
+      "enum": [
+        "schematic_unreviewed",
+        "imported_unreviewed",
+        "expert_reviewed",
+        "anatomical_unreviewed"
+      ]
+    },
+    "limitations": {
+      "type": "string",
+      "maxLength": 10000
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 10000
+      },
+      "maxItems": 50
+    },
+    "ontology": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "system": {
+            "type": "string",
+            "minLength": 1
+          },
+          "identifier": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "release": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "system",
+          "identifier",
+          "label",
+          "release",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "id",
+    "label",
+    "category",
+    "svg",
+    "view_box",
+    "landmarks",
+    "scale_class",
+    "representation",
+    "view",
+    "mirror_safe",
+    "license",
+    "creator",
+    "reference_ids",
+    "review_status",
+    "limitations",
+    "aliases"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:medical-illustration-studio:asset:1.0.0"
+}

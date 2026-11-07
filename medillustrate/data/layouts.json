@@ -1,0 +1,1145 @@
+{
+  "version": "1.0.0",
+  "coordinate_convention": "fractions of full canvas [x,y,width,height], aspect ratio preserved within each slot",
+  "layouts": [
+    {
+      "id": "anatomical-plate",
+      "title": "Single anatomical plate",
+      "reader_question": "What is present and where?",
+      "slots": {
+        "hero": [
+          0.24,
+          0.2,
+          0.53,
+          0.61
+        ]
+      },
+      "reading_order": [
+        "orientation",
+        "dominant structure",
+        "named landmarks"
+      ],
+      "locked_invariants": [
+        "One documented viewpoint",
+        "Accurate adjacency and depth",
+        "Label endpoints on named structures"
+      ],
+      "avoid": [
+        "Icon collage",
+        "Invented branching",
+        "Mirroring for convenience"
+      ],
+      "required_inputs": [
+        "Reviewed geometry",
+        "View and laterality",
+        "Required and omitted structures"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "epithelial-section",
+      "title": "Polarised epithelial section",
+      "reader_question": "How are the luminal and basal sides organised?",
+      "slots": {
+        "tissue": [
+          0.12,
+          0.35,
+          0.72,
+          0.4
+        ]
+      },
+      "reading_order": [
+        "lumen",
+        "epithelium",
+        "basal interface"
+      ],
+      "locked_invariants": [
+        "Apical-basal order",
+        "Contiguous epithelial row",
+        "Basement membrane position"
+      ],
+      "avoid": [
+        "Random nuclei outside cells",
+        "Confusing a section with a surface view"
+      ],
+      "required_inputs": [
+        "Cell classes",
+        "Junction detail",
+        "Tissue context"
+      ],
+      "example": "epithelial-barrier",
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "vascular-cross-section",
+      "title": "Vessel-wall cross-section",
+      "reader_question": "Which layer is being explained?",
+      "slots": {
+        "hero": [
+          0.24,
+          0.2,
+          0.53,
+          0.61
+        ]
+      },
+      "reading_order": [
+        "lumen",
+        "inner lining",
+        "wall layers"
+      ],
+      "locked_invariants": [
+        "Concentric layer order",
+        "Cut-plane declaration",
+        "No quantitative thickness claim without data"
+      ],
+      "avoid": [
+        "Red equals artery as a universal rule",
+        "Identical layer widths presented as measurements"
+      ],
+      "required_inputs": [
+        "Vessel class",
+        "Layer terminology",
+        "Cut plane"
+      ],
+      "example": "vascular-wall",
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "unfolded-tubule",
+      "title": "Unfolded tubular system",
+      "reader_question": "Which compartments are connected?",
+      "slots": {
+        "system": [
+          0.2,
+          0.2,
+          0.6,
+          0.66
+        ]
+      },
+      "reading_order": [
+        "entry",
+        "continuous tubular route",
+        "exit"
+      ],
+      "locked_invariants": [
+        "Lumen continuity",
+        "Separate blood and filtrate",
+        "Not-to-scale disclosure"
+      ],
+      "avoid": [
+        "Crossing lines interpreted as anastomoses",
+        "Claiming collecting duct is part of nephron"
+      ],
+      "required_inputs": [
+        "Segment list",
+        "Connectivity",
+        "Regional boundary"
+      ],
+      "example": "renal-nephron",
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "membrane-signalling",
+      "title": "Membrane-centred signalling",
+      "reader_question": "How does a signal cross a compartment boundary?",
+      "slots": {
+        "ligand": [
+          0.2,
+          0.19,
+          0.12,
+          0.17
+        ],
+        "receptor": [
+          0.38,
+          0.32,
+          0.13,
+          0.29
+        ],
+        "effector": [
+          0.58,
+          0.66,
+          0.14,
+          0.2
+        ]
+      },
+      "reading_order": [
+        "extracellular signal",
+        "boundary interaction",
+        "intracellular effect"
+      ],
+      "locked_invariants": [
+        "Compartment assignments",
+        "Biological edge type",
+        "Hypotheses visibly distinguished"
+      ],
+      "avoid": [
+        "All arrows meaning the same thing",
+        "Signal arrows called transport"
+      ],
+      "required_inputs": [
+        "Evidence for each claim",
+        "Receptor class",
+        "Mechanism scope"
+      ],
+      "example": "cell-signalling",
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "cell-interior",
+      "title": "Cell interior with selective detail",
+      "reader_question": "Where are the named cellular structures?",
+      "slots": {
+        "cell": [
+          0.12,
+          0.21,
+          0.64,
+          0.62
+        ]
+      },
+      "reading_order": [
+        "cell boundary",
+        "nucleus",
+        "selected organelles"
+      ],
+      "locked_invariants": [
+        "Organelle containment",
+        "No arbitrary copy counts treated as data",
+        "Shared abstraction level"
+      ],
+      "avoid": [
+        "Every organelle given equal emphasis",
+        "False measured size relationships"
+      ],
+      "required_inputs": [
+        "Cell type",
+        "Organelle subset",
+        "Scale policy"
+      ],
+      "example": "cell-interior",
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "paired-state",
+      "title": "Matched structural comparison",
+      "reader_question": "What precisely differs between the two states?",
+      "slots": {
+        "before": [
+          0.08,
+          0.3,
+          0.38,
+          0.4
+        ],
+        "after": [
+          0.54,
+          0.3,
+          0.38,
+          0.4
+        ]
+      },
+      "reading_order": [
+        "state A",
+        "state B",
+        "single declared difference"
+      ],
+      "locked_invariants": [
+        "Same viewpoint",
+        "Same dimensions and scale",
+        "Only named changes"
+      ],
+      "avoid": [
+        "Treatment efficacy implied by invented improvement",
+        "Changing every visual variable"
+      ],
+      "required_inputs": [
+        "State definitions",
+        "Evidence or explicit hypothetical status",
+        "Locked comparison settings"
+      ],
+      "example": "paired-epithelium",
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "study-workflow",
+      "title": "Research workflow",
+      "reader_question": "What material or information passes between stages?",
+      "slots": {
+        "input": [
+          0.08,
+          0.34,
+          0.17,
+          0.27
+        ],
+        "process": [
+          0.4,
+          0.34,
+          0.17,
+          0.27
+        ],
+        "output": [
+          0.73,
+          0.34,
+          0.17,
+          0.27
+        ]
+      },
+      "reading_order": [
+        "material",
+        "activity",
+        "measurement or information"
+      ],
+      "locked_invariants": [
+        "Differentiate sample from data",
+        "Traceable stage order",
+        "No fabricated outputs"
+      ],
+      "avoid": [
+        "Fictional plots as results",
+        "Decorative dashboard cards"
+      ],
+      "required_inputs": [
+        "Actual workflow scope",
+        "Stage definitions",
+        "Output type"
+      ],
+      "example": "study-workflow",
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "multiscale-zoom",
+      "title": "Nested biological scales",
+      "reader_question": "How does local structure relate to the larger context?",
+      "slots": {
+        "context": [
+          0.04,
+          0.34,
+          0.25,
+          0.3
+        ],
+        "cell": [
+          0.36,
+          0.25,
+          0.27,
+          0.44
+        ],
+        "detail": [
+          0.74,
+          0.37,
+          0.23,
+          0.28
+        ]
+      },
+      "reading_order": [
+        "context",
+        "selected region",
+        "magnified feature"
+      ],
+      "locked_invariants": [
+        "Zoom is not causation",
+        "Parent region explicitly selected",
+        "Independent scale or not-to-scale"
+      ],
+      "avoid": [
+        "Uniform scale bars on unequal magnification",
+        "Floating inset without origin"
+      ],
+      "required_inputs": [
+        "Source region",
+        "Local feature",
+        "Scale evidence"
+      ],
+      "example": "multi-scale-tissue",
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "cutaway",
+      "title": "Selective cutaway",
+      "reader_question": "What is hidden beneath an intact surface?",
+      "slots": {
+        "hero": [
+          0.18,
+          0.2,
+          0.64,
+          0.61
+        ]
+      },
+      "reading_order": [
+        "intact surface",
+        "cut edge",
+        "exposed contents"
+      ],
+      "locked_invariants": [
+        "Cut surfaces distinct from intact tissue",
+        "Layer occlusion",
+        "One documented lighting convention"
+      ],
+      "avoid": [
+        "Transparency that erases structures",
+        "Implausible resection"
+      ],
+      "required_inputs": [
+        "Reference anatomy",
+        "Cut plane",
+        "Removed structures"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "exploded-layers",
+      "title": "Exploded laminar anatomy",
+      "reader_question": "What is the order of normally apposed layers?",
+      "slots": {
+        "outer": [
+          0.25,
+          0.19,
+          0.5,
+          0.18
+        ],
+        "middle": [
+          0.25,
+          0.42,
+          0.5,
+          0.18
+        ],
+        "inner": [
+          0.25,
+          0.65,
+          0.5,
+          0.18
+        ]
+      },
+      "reading_order": [
+        "outer",
+        "intermediate",
+        "inner"
+      ],
+      "locked_invariants": [
+        "Original adjacency retained",
+        "Displacement explicitly conceptual",
+        "No displacement called anatomical distance"
+      ],
+      "avoid": [
+        "Rearranging layers to fit labels",
+        "Artificial gaps interpreted as pathology"
+      ],
+      "required_inputs": [
+        "Layer order",
+        "Displacement direction",
+        "Attachment information"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "section-registration",
+      "title": "Plane-to-section registration",
+      "reader_question": "Where was this section taken?",
+      "slots": {
+        "locator": [
+          0.07,
+          0.25,
+          0.35,
+          0.46
+        ],
+        "section": [
+          0.52,
+          0.25,
+          0.41,
+          0.46
+        ]
+      },
+      "reading_order": [
+        "whole",
+        "plane indicator",
+        "registered section"
+      ],
+      "locked_invariants": [
+        "Plane orientation",
+        "Patient laterality",
+        "One-to-one landmarks"
+      ],
+      "avoid": [
+        "Radiological display silently reflected",
+        "Section from a different level"
+      ],
+      "required_inputs": [
+        "Source volume or reviewed plate",
+        "Plane normal",
+        "Registration landmarks"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "surgical-sequence",
+      "title": "Reviewed procedural sequence",
+      "reader_question": "How do exposures and relationships change over time?",
+      "slots": {
+        "step1": [
+          0.06,
+          0.31,
+          0.27,
+          0.37
+        ],
+        "step2": [
+          0.37,
+          0.31,
+          0.27,
+          0.37
+        ],
+        "step3": [
+          0.68,
+          0.31,
+          0.27,
+          0.37
+        ]
+      },
+      "reading_order": [
+        "exposure",
+        "intermediate state",
+        "resulting state"
+      ],
+      "locked_invariants": [
+        "Same operative orientation",
+        "Tissue continuity",
+        "Qualified procedural review"
+      ],
+      "avoid": [
+        "Invented operative steps",
+        "Unsafe instructions without clinical context"
+      ],
+      "required_inputs": [
+        "Approved step list",
+        "Clinical specialist",
+        "Reference anatomy"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "innervation-map",
+      "title": "Innervation territory map",
+      "reader_question": "Which route reaches which territory?",
+      "slots": {
+        "trunk": [
+          0.29,
+          0.22,
+          0.37,
+          0.62
+        ],
+        "territory": [
+          0.72,
+          0.3,
+          0.22,
+          0.45
+        ]
+      },
+      "reading_order": [
+        "origin",
+        "route",
+        "territory"
+      ],
+      "locked_invariants": [
+        "Tract/nerve/branch distinction",
+        "Branch continuity",
+        "Territory uncertainty"
+      ],
+      "avoid": [
+        "Curves added as decorative nerves",
+        "Branch names attached to wrong level"
+      ],
+      "required_inputs": [
+        "Verified course",
+        "Landmarks",
+        "Variant policy"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "vascular-route",
+      "title": "Directed circulation route",
+      "reader_question": "Which named vessels connect these regions?",
+      "slots": {
+        "source": [
+          0.09,
+          0.28,
+          0.25,
+          0.4
+        ],
+        "bed": [
+          0.38,
+          0.28,
+          0.25,
+          0.4
+        ],
+        "return": [
+          0.69,
+          0.28,
+          0.25,
+          0.4
+        ]
+      },
+      "reading_order": [
+        "source",
+        "exchange region",
+        "return"
+      ],
+      "locked_invariants": [
+        "Flow direction",
+        "Named connections",
+        "Oxygenation distinct from vessel identity"
+      ],
+      "avoid": [
+        "Impossible anastomosis",
+        "Generic red/blue meaning unexplained"
+      ],
+      "required_inputs": [
+        "Connectivity table",
+        "Flow scope",
+        "Included/excluded beds"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "organ-topography",
+      "title": "Organ topography",
+      "reader_question": "Which neighbouring structures determine location?",
+      "slots": {
+        "region": [
+          0.17,
+          0.19,
+          0.66,
+          0.63
+        ]
+      },
+      "reading_order": [
+        "orientation",
+        "target",
+        "neighbours"
+      ],
+      "locked_invariants": [
+        "Laterality",
+        "Position relative to landmarks",
+        "Depth and cavity relationships"
+      ],
+      "avoid": [
+        "Independent icons placed in a silhouette",
+        "Patient variation erased"
+      ],
+      "required_inputs": [
+        "Species and life stage",
+        "Reviewed regional anatomy",
+        "Depth plan"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "histology-schema",
+      "title": "Histology-derived explanatory schema",
+      "reader_question": "Which tissue organisation should the reader recognise?",
+      "slots": {
+        "field": [
+          0.1,
+          0.24,
+          0.63,
+          0.52
+        ],
+        "detail": [
+          0.78,
+          0.34,
+          0.18,
+          0.29
+        ]
+      },
+      "reading_order": [
+        "tissue pattern",
+        "cell relationships",
+        "selected feature"
+      ],
+      "locked_invariants": [
+        "Schematic label",
+        "No fabricated microscope evidence",
+        "Stain/colour semantics declared"
+      ],
+      "avoid": [
+        "Invented histology passed as observed",
+        "Cytology diagnosis from illustrative texture"
+      ],
+      "required_inputs": [
+        "Actual reference material",
+        "Structural thesis",
+        "Schematic disclosure"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "structure-binding",
+      "title": "Structure-based binding view",
+      "reader_question": "Where is a supported molecular interaction located?",
+      "slots": {
+        "complex": [
+          0.12,
+          0.23,
+          0.57,
+          0.55
+        ],
+        "site": [
+          0.76,
+          0.33,
+          0.19,
+          0.31
+        ]
+      },
+      "reading_order": [
+        "assembly",
+        "selected site",
+        "observed or proposed interaction"
+      ],
+      "locked_invariants": [
+        "Structure identifiers",
+        "Chain/assembly definition",
+        "Missing regions acknowledged"
+      ],
+      "avoid": [
+        "Invented atom contacts",
+        "Random protein blob called crystal structure"
+      ],
+      "required_inputs": [
+        "PDB/source file",
+        "Source paper",
+        "Representation and ligand state"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "reaction-network",
+      "title": "Reaction-centred network",
+      "reader_question": "What is consumed, produced or regulates a process?",
+      "slots": {
+        "substrate": [
+          0.1,
+          0.35,
+          0.2,
+          0.28
+        ],
+        "process": [
+          0.4,
+          0.4,
+          0.15,
+          0.18
+        ],
+        "product": [
+          0.68,
+          0.35,
+          0.22,
+          0.28
+        ]
+      },
+      "reading_order": [
+        "inputs",
+        "process",
+        "outputs and modifiers"
+      ],
+      "locked_invariants": [
+        "Process node",
+        "Material vs modulation edges",
+        "Stoichiometry only when supported"
+      ],
+      "avoid": [
+        "Activation arrow used as mass flow",
+        "Mixed SBGN dialects"
+      ],
+      "required_inputs": [
+        "Reaction definitions",
+        "Evidence",
+        "Named notation"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "feedback-loop",
+      "title": "Feedback organisation",
+      "reader_question": "What returns to regulate an earlier process?",
+      "slots": {
+        "input": [
+          0.08,
+          0.32,
+          0.22,
+          0.27
+        ],
+        "response": [
+          0.4,
+          0.32,
+          0.22,
+          0.27
+        ],
+        "feedback": [
+          0.73,
+          0.32,
+          0.2,
+          0.27
+        ]
+      },
+      "reading_order": [
+        "forward route",
+        "response",
+        "return regulation"
+      ],
+      "locked_invariants": [
+        "Feedback sign",
+        "Endpoint identity",
+        "No unsupported closed-loop causation"
+      ],
+      "avoid": [
+        "Circular layout treated as temporal proof",
+        "Inhibition confused with absence"
+      ],
+      "required_inputs": [
+        "Edge claims",
+        "Mechanism boundary",
+        "Feedback evidence"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "cell-interaction",
+      "title": "Two-cell interface",
+      "reader_question": "What changes at a specific contact?",
+      "slots": {
+        "cellA": [
+          0.11,
+          0.23,
+          0.31,
+          0.51
+        ],
+        "cellB": [
+          0.57,
+          0.23,
+          0.31,
+          0.51
+        ]
+      },
+      "reading_order": [
+        "cell identities",
+        "contact region",
+        "local interaction"
+      ],
+      "locked_invariants": [
+        "Membrane adjacency",
+        "Side-specific proteins",
+        "Contact vs soluble signalling"
+      ],
+      "avoid": [
+        "Receptor on wrong cell",
+        "Cells fused unintentionally"
+      ],
+      "required_inputs": [
+        "Cell types",
+        "Molecular sides",
+        "Interaction evidence"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "developmental-series",
+      "title": "Developmental sequence",
+      "reader_question": "Which changes are attributable to developmental stage?",
+      "slots": {
+        "early": [
+          0.07,
+          0.29,
+          0.25,
+          0.42
+        ],
+        "mid": [
+          0.38,
+          0.29,
+          0.25,
+          0.42
+        ],
+        "late": [
+          0.69,
+          0.29,
+          0.25,
+          0.42
+        ]
+      },
+      "reading_order": [
+        "earlier stage",
+        "intermediate stage",
+        "later stage"
+      ],
+      "locked_invariants": [
+        "Species",
+        "Stage rather than arbitrary age",
+        "Homologous landmarks"
+      ],
+      "avoid": [
+        "Adult proportions shrunk to represent children",
+        "Cross-species stage mixing"
+      ],
+      "required_inputs": [
+        "Stage references",
+        "Scale policy",
+        "Landmark correspondences"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "pathology-localisation",
+      "title": "Localised pathological change",
+      "reader_question": "Where does the supported change occur?",
+      "slots": {
+        "context": [
+          0.07,
+          0.24,
+          0.53,
+          0.52
+        ],
+        "lesion": [
+          0.69,
+          0.28,
+          0.24,
+          0.43
+        ]
+      },
+      "reading_order": [
+        "normal context",
+        "lesion boundary",
+        "mechanism or morphology"
+      ],
+      "locked_invariants": [
+        "Lesion location",
+        "Evidence vs stylisation",
+        "No diagnostic specificity from invented colour"
+      ],
+      "avoid": [
+        "Impossible invasion routes",
+        "Disease severity inferred without data"
+      ],
+      "required_inputs": [
+        "Disease context",
+        "Reference material",
+        "Clinical reviewer"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "device-anatomy",
+      "title": "Device in anatomical context",
+      "reader_question": "How does a device relate to the surrounding structure?",
+      "slots": {
+        "anatomy": [
+          0.13,
+          0.2,
+          0.63,
+          0.6
+        ],
+        "detail": [
+          0.79,
+          0.35,
+          0.17,
+          0.26
+        ]
+      },
+      "reading_order": [
+        "anatomical route",
+        "device position",
+        "contact or functional region"
+      ],
+      "locked_invariants": [
+        "Correct scale/placement",
+        "Manufacturer version",
+        "No instruction inferred from decoration"
+      ],
+      "avoid": [
+        "Device floating through tissue",
+        "Off-label use implied without context"
+      ],
+      "required_inputs": [
+        "Reviewed device geometry",
+        "Anatomical references",
+        "Intended-use statement"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "patient-explanation",
+      "title": "Patient educational explanation",
+      "reader_question": "What should a non-specialist understand or do?",
+      "slots": {
+        "hero": [
+          0.23,
+          0.23,
+          0.54,
+          0.52
+        ]
+      },
+      "reading_order": [
+        "plain-language question",
+        "essential visual",
+        "clear explanation"
+      ],
+      "locked_invariants": [
+        "Limited jargon",
+        "Respectful representation",
+        "Comprehension testing"
+      ],
+      "avoid": [
+        "Graphic detail unrelated to purpose",
+        "Treatment recommendation without source"
+      ],
+      "required_inputs": [
+        "Audience needs",
+        "Approved clinical message",
+        "Accessibility plan"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "graphical-abstract",
+      "title": "Editorial graphical abstract",
+      "reader_question": "What is the single supported finding and its scope?",
+      "slots": {
+        "premise": [
+          0.06,
+          0.31,
+          0.22,
+          0.38
+        ],
+        "finding": [
+          0.34,
+          0.22,
+          0.37,
+          0.52
+        ],
+        "implication": [
+          0.77,
+          0.35,
+          0.17,
+          0.3
+        ]
+      },
+      "reading_order": [
+        "question",
+        "supported result",
+        "bounded interpretation"
+      ],
+      "locked_invariants": [
+        "Actual findings",
+        "Publisher-specific AI policy",
+        "No invented study quantities"
+      ],
+      "avoid": [
+        "Dashboard of every method",
+        "General-purpose AI imagery where disallowed"
+      ],
+      "required_inputs": [
+        "Manuscript",
+        "Real result",
+        "Journal policy"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "equity-comparison",
+      "title": "Respectful representation comparison",
+      "reader_question": "Does the explanation remain true across represented groups?",
+      "slots": {
+        "groupA": [
+          0.09,
+          0.3,
+          0.36,
+          0.4
+        ],
+        "groupB": [
+          0.55,
+          0.3,
+          0.36,
+          0.4
+        ]
+      },
+      "reading_order": [
+        "common anatomy",
+        "relevant difference",
+        "limits of comparison"
+      ],
+      "locked_invariants": [
+        "Variation is evidence-based",
+        "Shared scientific detail",
+        "No default group coded as normal"
+      ],
+      "avoid": [
+        "Skin tone as pathology code",
+        "Unsupported group biology"
+      ],
+      "required_inputs": [
+        "Purpose of comparison",
+        "Evidence",
+        "Representation brief"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    },
+    {
+      "id": "evidence-mechanism",
+      "title": "Evidence-linked mechanism",
+      "reader_question": "Which portions are established and which are proposed?",
+      "slots": {
+        "known": [
+          0.08,
+          0.31,
+          0.3,
+          0.4
+        ],
+        "uncertain": [
+          0.45,
+          0.31,
+          0.2,
+          0.4
+        ],
+        "outcome": [
+          0.72,
+          0.31,
+          0.2,
+          0.4
+        ]
+      },
+      "reading_order": [
+        "observed or established",
+        "proposed bridge",
+        "outcome"
+      ],
+      "locked_invariants": [
+        "Visible uncertainty",
+        "Claim-specific evidence",
+        "Association is not a causal edge"
+      ],
+      "avoid": [
+        "A solid arrow laundering speculation",
+        "Source lists without claim mapping"
+      ],
+      "required_inputs": [
+        "Claim ledger",
+        "Evidence status",
+        "Scope of inference"
+      ],
+      "example": null,
+      "implementation": "normalized placement scaffold; authored geometry and labels remain explicit"
+    }
+  ]
+}

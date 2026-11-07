@@ -1,0 +1,83 @@
+name: medical-illustration-studio
+scope: Extend the supplied medical illustration toolkit and unfinished atlas refinement
+  with a functioning local agentic canvas, persistent projects, targeted change proposals,
+  optional providers, source-linked anatomy contracts, editable lettering, controlled
+  region editing, exports and agent tool access. Preserve original schematic workflows.
+  No external accounts or user repositories are modified.
+create:
+- medillustrate/workspace.py
+- medillustrate/agent.py
+- medillustrate/providers.py
+- medillustrate/server.py
+- medillustrate/mcp_server.py
+- medillustrate/exports.py
+- medillustrate/static/studio.html
+- medillustrate/static/studio.css
+- medillustrate/static/studio.js
+- medillustrate/data/studio-seeds.json
+- medillustrate/data/project.schema.json
+- medillustrate/data/anatomy-contracts.json
+- medillustrate/data/refinement-sources.json
+- docs/agentic-studio.md
+- docs/painting-grammar.md
+- docs/atlas-refinement.md
+- docs/anatomy-reference-register.md
+- docs/figurelabs-study.md
+- tests/test_atelier.py
+- tests/test_workspace.py
+- tests/test_agent.py
+- tests/test_providers.py
+- tests/test_server.py
+- tests/test_exports.py
+- tests/test_mcp.py
+- tests/test_browser.py
+- tools/build_studio.py
+- studio-preview.html
+- studio.command
+- studio.bat
+modify:
+- manifest.yaml
+- pyproject.toml
+- README.md
+- SKILL.md
+- medillustrate/atelier.py
+- medillustrate/cli.py
+- medillustrate/__init__.py
+- medillustrate/data/plate.schema.json
+- tools/build_atlas_plates.py
+- atlas-refined.html
+- tools/build_anatomical_library.py
+- medillustrate/data/atlas-assets.json
+delete: []
+
+agentic_composer:
+  authority: User request2November2026 to reuse Science Studio subscription engine and test live workflow.
+  implementation: Existing agent.py, server.py, workspace.py and static studio sources.
+  engine: ../science-studio/src/raso/rstudioHarness.py (runtime dependency, not copied).
+  behaviour: Persistent conversation, artboard inspection and validated editing tools, iterative model calls, preview and explicit acceptance, cancellation.
+  limits: Loopback only; credentials remain in Codex store; no host shell tools; four model calls per turn; no silent local fallback.
+  verification: Existing test_agent.py and test_server.py plus actual live browser request.
+
+creative_platform:
+  authority: Principal2November2026 commissions unified Artcraft stack integration, simpler UI and application submission after refinement.
+  implementation: medillustrate/graphics.py; existing workspace, agent, server, exports and static sources; tests/test_graphics.py.
+  dependencies: vendor/artcraft/{photocraft,vectorcraft}/**; original pinned release engines, original notices and license texts.
+  acquisition: Official upstream CLI and web release distributions; vendor size exception authorised by request to bring in entire editing stack.
+  reader_surface: Artwork and concise editing conversation; technical traces remain in control exports.
+  acceptance: Native pixel and vector engines render real edits; accepted native files persist; previews do not mutate source; stale changes fail; imports/exports roundtrip; actual subscription workflow tested; submit MIT only with truthful current capabilities.
+
+flat_workspace:
+  authority: User2November2026 requires tools at the app level rather than popovers.
+  implementation: Existing static HTML, JS, CSS and generated studio-preview.html.
+  acceptance: Permanent Canvas/Vector/Photo workspace tabs; editors occupy central work area, tool search in sidebar, composer remains accessible; native save-back retained; no editing-tools dialog.
+
+visual_coherence:
+  authority: User2November2026 reports inconsistent visual presentation.
+  implementation: Existing static UI and standalone build.
+  acceptance: Larger native canvas, one properties dock, optional artboard rail, quieter conversation, accurate proposal review on Canvas, readable controls and no redundant host status bar.
+
+merged_workspace:
+  authority: User2November2026 explicitly requires merge rather than embedded editors.
+  implementation: Existing static HTML/JS/CSS, graphics.py and generated preview.
+  behaviour: One shared viewport, host tool controls, native engine commands and same revision proposals; no iframe or upstream application chrome.
+  acceptance: Real vector and pixel edits from integrated controls; native persistence, preview/accept/discard and engine command discovery preserved.

@@ -1,0 +1,375 @@
+{
+  "checked": "2026-10-05",
+  "scope": "Focused primary-source review, not a systematic or exhaustive census of every atlas or every market competitor.",
+  "sources": [
+    {
+      "id": "ami-profession",
+      "title": "AMI: Learn About Medical Illustration",
+      "url": "https://ami.org/medical-illustration/learn-about-it/",
+      "kind": "professional",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Medical illustration combines scientific research, visual communication and subject-expert collaboration. Professional competence cannot be inferred from attractive images."
+    },
+    {
+      "id": "ami-ethics",
+      "title": "AMI Code of Ethics",
+      "url": "https://ami.org/wp-content/uploads/2025/03/AMI_Code_of_Ethics.pdf",
+      "kind": "professional",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Use honest attribution, permissions and confidential handling of entrusted material. PDF and its single page were inspected."
+    },
+    {
+      "id": "netter-rights",
+      "title": "Netter Images",
+      "url": "https://www.netterimages.com/",
+      "kind": "licensing",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "A reference for anatomical craft and licensed illustration, not an open asset collection. No Netter artwork is included."
+    },
+    {
+      "id": "biorender-rights",
+      "title": "BioRender academic licence",
+      "url": "https://www.biorender.com/academic-license",
+      "kind": "licensing",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Do not extract icons or redistribute a competing standalone library. Check the applicable account licence for each finished figure."
+    },
+    {
+      "id": "biorender-citation",
+      "title": "BioRender figure citation guidance",
+      "url": "https://help.biorender.com/hc/en-gb/articles/17605511350685-How-to-cite-your-BioRender-figure",
+      "kind": "licensing",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Citation and reuse conditions must be checked for the actual licensed figure; a public image is not an unrestricted asset source."
+    },
+    {
+      "id": "servier",
+      "title": "Servier Medical Art",
+      "url": "https://smart.servier.com/",
+      "kind": "asset-provider",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Reusable professional medical drawings under CC BY 4.0; retain attribution and identify adaptations. No provider files are bundled."
+    },
+    {
+      "id": "servier-cite",
+      "title": "How to cite Servier Medical Art",
+      "url": "https://smart.servier.com/how-to-cite-servier-medical-art/",
+      "kind": "licensing",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Use the attribution guidance supplied by the rights holder and preserve the Creative Commons link."
+    },
+    {
+      "id": "nih-bioart",
+      "title": "NIH BioArt Source",
+      "url": "https://bioart.niaid.nih.gov/",
+      "kind": "asset-provider",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Professional scientific assets searchable by subject. Read the licence of each entry."
+    },
+    {
+      "id": "nih-bioart-faq",
+      "title": "NIH BioArt Source FAQ",
+      "url": "https://bioart.niaid.nih.gov/faqs",
+      "kind": "licensing",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "The collection contains public-domain and attribution-licensed material. Do not infer a blanket licence from NIH hosting."
+    },
+    {
+      "id": "nih-bioart-terms",
+      "title": "NIH BioArt Source terms",
+      "url": "https://bioart.niaid.nih.gov/terms",
+      "kind": "licensing",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Users must verify fitness and comply with entry-specific attribution; provider availability is not a medical endorsement of a downstream figure."
+    },
+    {
+      "id": "bioicons",
+      "title": "Bioicons repository",
+      "url": "https://github.com/duerrsimon/bioicons",
+      "kind": "asset-provider",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Open SVG collection with separate CC0, CC BY, CC BY-SA, MIT and BSD paths. Asset-level rights differ from website code rights."
+    },
+    {
+      "id": "bioicons-web",
+      "title": "Bioicons browser",
+      "url": "https://bioicons.com/",
+      "kind": "asset-provider",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Searchable biological icons for vector editors. Do not count a link to the collection as a bundled or tested local library."
+    },
+    {
+      "id": "drawio-bioicons",
+      "title": "diagrams.net: Biochemistry clipart",
+      "url": "https://www.drawio.com/docs/diagram-types/use-cases/biochem-clipart-in-diagrams/",
+      "kind": "software",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "An existing Bioicons route for diagrams.net. Reuse it when its connector semantics are sufficient."
+    },
+    {
+      "id": "scidraw",
+      "title": "SciDraw",
+      "url": "https://scidraw.io/",
+      "kind": "asset-provider",
+      "checked": "2026-10-05",
+      "status": "discovery-only",
+      "application": "Candidate community resource. The dynamic site did not expose sufficient licence text in this review; verify each item before use."
+    },
+    {
+      "id": "zanatomy",
+      "title": "Z-Anatomy anatomical models",
+      "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+      "kind": "asset-provider",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "The repository states CC BY-SA 4.0. Useful as a 3D reference route; no model is bundled, imported or validated here."
+    },
+    {
+      "id": "fipat",
+      "title": "FIPAT terminology portal",
+      "url": "https://ifaa.unifr.ch/",
+      "kind": "terminology",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Use a named terminology and version; the portal lists Terminologia Anatomica Humana 2024 and other terminologies. A terminology label does not verify geometry."
+    },
+    {
+      "id": "ta2",
+      "title": "TA2 viewer",
+      "url": "https://ta2viewer.openanatomy.org/",
+      "kind": "terminology",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Versioned TA2 lookup is available. Do not silently call every terminology source the newest edition."
+    },
+    {
+      "id": "uberon",
+      "title": "Uberon anatomy ontology",
+      "url": "https://obophenotype.github.io/uberon/",
+      "kind": "terminology",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Use stable, verified terms for cross-species anatomy; record the ontology release and relation type."
+    },
+    {
+      "id": "cl",
+      "title": "Cell Ontology",
+      "url": "https://obophenotype.github.io/cell-ontology/",
+      "kind": "terminology",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Use verified natural cell-type identifiers with a pinned release; do not invent identifiers from labels."
+    },
+    {
+      "id": "mesh",
+      "title": "NLM MeSH",
+      "url": "https://www.nlm.nih.gov/mesh/meshhome.html",
+      "kind": "terminology",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "MeSH supports discovery and indexing, not spatial reconstruction or geometric validation."
+    },
+    {
+      "id": "sbgn",
+      "title": "Systems Biology Graphical Notation",
+      "url": "https://sbgn.github.io/",
+      "kind": "notation",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Process Description, Activity Flow and Entity Relationship have different semantics. This toolkit uses a declared house notation, not an SBGN certification."
+    },
+    {
+      "id": "sbgn-spec",
+      "title": "SBGN specifications",
+      "url": "https://sbgn.github.io/specifications",
+      "kind": "notation",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Formal SBGN delivery requires the appropriate specification and a separate conformance check, not only familiar-looking arrows."
+    },
+    {
+      "id": "dicom",
+      "title": "DICOM patient image coordinate definitions",
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.2.html",
+      "kind": "standard",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Do not confuse patient coordinates, image orientation and display convention. Preserve the coordinate frame and laterality."
+    },
+    {
+      "id": "wai-complex",
+      "title": "W3C WAI: Complex images",
+      "url": "https://www.w3.org/WAI/tutorials/images/complex/",
+      "kind": "accessibility",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Provide a concise text alternative and the necessary extended explanation for complex scientific figures."
+    },
+    {
+      "id": "wai-colour",
+      "title": "WCAG: Use of Color",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+      "kind": "accessibility",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Do not encode distinctions exclusively through colour. Pair semantic colours with text, shape, line type or pattern."
+    },
+    {
+      "id": "figure-design",
+      "title": "Rougier et al. Ten Simple Rules for Better Figures",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833",
+      "kind": "research",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Make composition depend on the intended message, audience and medium. Numerical toolkit defaults are house rules, not claims of a universal journal standard."
+    },
+    {
+      "id": "plos-figures",
+      "title": "PLOS ONE figure preparation guidance",
+      "url": "https://journals.plos.org/plosone/s/figures",
+      "kind": "publication",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Check current final figure format and resolution requirements for the target journal. The generic toolkit profile is not a journal acceptance guarantee."
+    },
+    {
+      "id": "elsevier-ai",
+      "title": "Elsevier generative AI policies for journals",
+      "url": "https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals",
+      "kind": "publication",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "AI-assisted explanatory diagrams require oversight/disclosure. Primary research images and graphical abstracts have different restrictions; journal rules must be checked."
+    },
+    {
+      "id": "nature-ai",
+      "title": "Nature Portfolio AI policy",
+      "url": "https://www.nature.com/nature-portfolio/editorial-policies/ai",
+      "kind": "publication",
+      "checked": "2026-10-05",
+      "status": "retrieval-incomplete",
+      "application": "Full policy could not be retrieved in this review. Read the current official policy for the target journal; no pre-approved export profile is supplied."
+    },
+    {
+      "id": "openstax-epithelium",
+      "title": "OpenStax A&P 2e, 4.2 Epithelial Tissue",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-2-epithelial-tissue",
+      "kind": "anatomy-reference",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Reference for polarity and epithelial organisation. Original geometry is not copied from its figures; verify current item/version rights before reusing textbook content."
+    },
+    {
+      "id": "openstax-vessels",
+      "title": "OpenStax A&P 2e, 20.1 Blood Vessel Structure",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-1-structure-and-function-of-blood-vessels",
+      "kind": "anatomy-reference",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Reference for schematic vessel-wall organisation. Illustrated layer widths are not measurements."
+    },
+    {
+      "id": "openstax-kidney",
+      "title": "OpenStax A&P 2e, Chapter 25 review / microscopic anatomy",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-chapter-review",
+      "kind": "anatomy-reference",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Reference for nephron segment continuity and distinction between the nephron and its collecting system. No copied textbook illustration is included."
+    },
+    {
+      "id": "openstax-signalling",
+      "title": "OpenStax Biology 2e, Signalling Molecules and Receptors",
+      "url": "https://openstax.org/books/biology-2e/pages/9-1-signaling-molecules-and-cellular-receptors",
+      "kind": "biology-reference",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Reference for explanatory ligand/receptor categories. The specimen is an invented abstract example, not a named experimentally established pathway."
+    },
+    {
+      "id": "openstax-organelles",
+      "title": "OpenStax A&P 2e, 3.2 Cytoplasm and Organelles",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-2-the-cytoplasm-and-cellular-organelles",
+      "kind": "biology-reference",
+      "checked": "2026-10-05",
+      "status": "verification-target",
+      "application": "Recommended verification target for generic organelle symbols; detailed asset-level review has not been performed."
+    },
+    {
+      "id": "openstax-connective",
+      "title": "OpenStax A&P 2e, 4.3 Connective Tissue",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-3-connective-tissue-supports-and-protects",
+      "kind": "anatomy-reference",
+      "checked": "2026-10-05",
+      "status": "verification-target",
+      "application": "Recommended verification target for connective-tissue cell and matrix symbols."
+    },
+    {
+      "id": "openstax-blood",
+      "title": "OpenStax A&P 2e, Chapter 18 Blood",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-introduction",
+      "kind": "anatomy-reference",
+      "checked": "2026-10-05",
+      "status": "verification-target",
+      "application": "Recommended verification target for blood-cell symbols; they are not cytology evidence or diagnostic classifiers."
+    },
+    {
+      "id": "openstax-immune",
+      "title": "OpenStax A&P 2e, Chapter 21 Immunity",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-introduction",
+      "kind": "biology-reference",
+      "checked": "2026-10-05",
+      "status": "verification-target",
+      "application": "Recommended verification target for generic immune-cell and antibody symbols."
+    },
+    {
+      "id": "rcsb",
+      "title": "RCSB PDB usage policies",
+      "url": "https://www.rcsb.org/pages/policies",
+      "kind": "structure-data",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Distinguish CC0 archive coordinate data from attribution-licensed educational images. Record structure ID, method, source paper and the rendering decisions."
+    },
+    {
+      "id": "cairosvg",
+      "title": "CairoSVG documentation",
+      "url": "https://cairosvg.org/documentation/",
+      "kind": "software",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "CairoSVG handles the optional SVG-to-PNG/PDF export. Unsafe XML processing is never enabled."
+    },
+    {
+      "id": "house-design",
+      "title": "Medical Illustration Studio original design rules",
+      "url": "urn:medical-illustration-studio:house-design:1",
+      "kind": "original-design",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Original procedural schematic geometry and house defaults. This is not independent biological evidence."
+    },
+    {
+      "id": "goodsell",
+      "title": "RCSB PDB-101 Goodsell Gallery",
+      "url": "https://pdb101.rcsb.org/sci-art/goodsell-gallery",
+      "kind": "scientific-art",
+      "checked": "2026-10-05",
+      "status": "reviewed",
+      "application": "Molecular landscapes combine structural, microscopy and biophysical information with explicit omissions. The gallery states CC BY 4.0 with per-illustration acknowledgement. No artwork is bundled."
+    }
+  ]
+}

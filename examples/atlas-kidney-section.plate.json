@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "atlas-kidney-section",
+  "title": "Kidney",
+  "subtitle": "Coronal section with the collecting system opened",
+  "description": "A section through an idealised adult human kidney shows cortical tissue, medullary pyramids and the opened collecting system. Selected hilar vessels are retained.",
+  "asset": "atlas-kidney-section",
+  "width": 1000,
+  "height": 1190,
+  "print_width_mm": 190,
+  "label_size": 17,
+  "label_bank_width": 174,
+  "art_box": [
+    204,
+    142,
+    610,
+    889
+  ],
+  "anatomy": {
+    "species": "Homo sapiens",
+    "life_stage": "adult, idealised",
+    "view": "coronal illustrative section",
+    "laterality": "unspecified"
+  },
+  "labels": [
+    {
+      "landmark": "capsule",
+      "text": "Fibrous capsule",
+      "side": "left"
+    },
+    {
+      "landmark": "cortex",
+      "text": "Renal cortex",
+      "side": "left"
+    },
+    {
+      "landmark": "medulla",
+      "text": "Renal pyramid",
+      "side": "left"
+    },
+    {
+      "landmark": "column",
+      "text": "Renal column",
+      "side": "left",
+      "y": 777
+    },
+    {
+      "landmark": "papilla",
+      "text": "Renal papilla",
+      "side": "left",
+      "y": 690
+    },
+    {
+      "landmark": "artery",
+      "text": "Renal artery",
+      "side": "right"
+    },
+    {
+      "landmark": "vein",
+      "text": "Renal vein",
+      "side": "right"
+    },
+    {
+      "landmark": "minor-calyx",
+      "text": "Minor calyx",
+      "side": "right",
+      "y": 665
+    },
+    {
+      "landmark": "pelvis",
+      "text": "Renal pelvis",
+      "side": "right",
+      "y": 733
+    },
+    {
+      "landmark": "major-calyx",
+      "text": "Major calyx",
+      "side": "right",
+      "y": 804
+    },
+    {
+      "landmark": "ureter",
+      "text": "Ureter",
+      "side": "right"
+    }
+  ],
+  "caption": "Illustrative coronal section. Calyces and renal pelvis are opened to show their continuity. Selected vessels only; not to scale.",
+  "reference_line": "Anatomical reference: OpenStax, Anatomy and Physiology 2e, section 25.3.",
+  "intended_use": "educational-draft"
+}
