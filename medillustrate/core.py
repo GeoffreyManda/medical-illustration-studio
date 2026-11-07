@@ -241,15 +241,15 @@ def landmark(node: Mapping[str,Any],asset: Mapping[str,Any],name: str) -> tuple[
 
 @lru_cache(maxsize=48)
 def _font(size: float, bold: bool=False):
-    try:
-        from PIL import ImageFont
-        return ImageFont.truetype('DejaVuSans-Bold.ttf' if bold else 'DejaVuSans.ttf',round(size*4))
-    except (ImportError,OSError): return None
+    from PIL import ImageFont
+    filename = 'DejaVuSans-Bold.ttf' if bold else 'DejaVuSans.ttf'
+    path = Path(__file__).with_name('data') / 'fonts' / filename
+    return ImageFont.truetype(str(path), round(size * 4))
 
 
 def text_width(text: str,size: float,bold: bool=False) -> float:
     f=_font(size,bold)
-    return f.getlength(text)/4 if f is not None else len(text)*size*.64
+    return f.getlength(text) / 4
 
 
 def wrap_text(text: str,width: float,size: float,bold: bool=False) -> list[str]:

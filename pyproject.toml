@@ -9,7 +9,7 @@ description = "Versioned local medical illustration workspace, atlas grammar, ed
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT for software; original artwork offered under CC0-1.0"}
-dependencies = ["jsonschema>=4.18,<5", "defusedxml>=0.7,<1"]
+dependencies = ["jsonschema>=4.18,<5", "defusedxml>=0.7,<1", "Pillow>=10,<13"]
 
 [project.optional-dependencies]
 studio = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "httpx>=0.27,<1", "pypdf>=5,<7", "python-pptx>=1,<2", "CairoSVG>=2.7,<3", "Pillow>=10,<13"]
@@ -26,7 +26,7 @@ medillustrate-mcp = "medillustrate.mcp_server:main"
 include = ["medillustrate*"]
 
 [tool.setuptools.package-data]
-medillustrate = ["data/*.json", "static/*.html", "static/*.css", "static/*.js"]
+medillustrate = ["data/*.json", "data/fonts/*", "static/*.html", "static/*.css", "static/*.js"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
